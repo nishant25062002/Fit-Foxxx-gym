@@ -1,0 +1,22 @@
+.Header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Header_options{
+    display: flex;
+}
+.Header_options>div{
+    
+}
+.Header_socialApp{
+    display: flex;
+}
+.Header_socialApp>div{
+
+}
+.Head{
+    z-index: 1;
+    height: 10vh;
+    background-color: white;
+}
