@@ -1,13 +1,13 @@
-import { css } from "@emotion/react";
 import React from "react";
+import styled from 'styled-components';
 
 const Title = () => (
-  <h2 css={styles}>
+  <Section >
     CHOOSE <span>PROGRAM</span>
-  </h2>
+  </Section>
 );
 
-const styles = css`
+const Section= styled.h2`
   color: #232d39;
   font-size: 26px;
   font-weight: 900;

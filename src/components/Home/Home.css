@@ -1,8 +1,11 @@
 .Home{
-    background-color: rgba(54, 53, 53, 0.575);
+    background-color: rgba(54, 53, 53, 0.731);
     height: 100vh;
     width: 100%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .Home>img{
     position: absolute;
@@ -12,5 +15,31 @@
     z-index: -1;
 }
 .home_body{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    width: 700px;
+    max-width: 90vw;
+}
+.home_body>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    height: 45px;
+    width: 200px;
+    font-weight: bold; 
+    color: white;
+    background-color: rgb(154, 154, 154);
+    margin: 12px 0;
+}
+.home_body>h4{
+    display: flex;
+    font-size: 20px;
+    line-height: 23px;
 }

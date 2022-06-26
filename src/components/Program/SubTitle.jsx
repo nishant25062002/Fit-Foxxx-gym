@@ -1,15 +1,15 @@
-import {  css } from "@emotion/react";
 import React from "react";
+import styled from 'styled-components';
 
 const Subtitle = () => (
-  <p css={styles}>
+  <Section >
     Training Studio is free CSS template for gyms and fitness centers. You are{" "}
     <br />
     allowed to use this layout for your business website.
-  </p>
+  </Section>
 );
 
-const styles = css`
+const Section= styled.p`
   color: #7a7a7a;
   font-size: 15px;
   line-height: 1.7;

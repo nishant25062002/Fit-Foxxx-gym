@@ -2,15 +2,22 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 10vh;
+  width: 100%;
 }
 .Header_options{
     display: flex;
+    width: 40%;
+    justify-content: space-between;
 }
 .Header_options>div{
-    
+    font-size: 18px;
+    font-weight: 500;
 }
 .Header_socialApp{
     display: flex;
+    width: 10%;
+    justify-content: space-between;
 }
 .Header_socialApp>div{
     
@@ -18,5 +25,31 @@
 .Head{
     z-index: 1;
     height: 10vh;
+    width: 100%;
     background-color: white;
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Head1{
+    color: gray;
+}
+.Head2{
+    align-items: center;
+    display: flex;
+}
+.Head2>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    height: 45px;
+    width: 100px;
+    font-weight: bold;
+}
+.Head2_div{
+
 }

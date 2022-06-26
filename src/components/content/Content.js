@@ -22,8 +22,8 @@ const Content = () => {
 
       <div className="second-video">
         <div className="content__video">
-        <iframe width="420" height="345" src="https://www.youtube.com/embed/x-upKQJ7zxM">
-</iframe>
+          <iframe width="420" height="345" src="https://www.youtube.com/embed/x-upKQJ7zxM">
+          </iframe>
         </div>
       </div>
     </div>

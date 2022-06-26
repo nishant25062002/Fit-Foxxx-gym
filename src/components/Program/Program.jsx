@@ -1,17 +1,17 @@
-import { css } from "@emotion/react";
 import React from "react";
-// import Icon from "../GlobalComponents/Icon";
+import Icon from "../GlobalComponents/Icon";
 import Title from "./Title";
 import SubTitle from "./SubTitle";
 import Box from "./Box";
-// import Container from "../GlobalComponents/Container";
+import Container from "../GlobalComponents/Container";
+import styled from 'styled-components';
 
 const Program = () => (
-  <div css={styles} className="gymProgram">
-        <Title />
-    {/* <Icon /> */}
+  <Section className="gymProgram">
+    <Title />
+    <Icon />
     <SubTitle />
-    {/* <Container> */}
+    <Container>
       <Box
         title="Basic Fitness"
         desc="Please do not re-distribute this template ZIP file on any template collection website. This is not allowed."
@@ -36,11 +36,11 @@ const Program = () => (
         title="Body Building Course"
         desc="Suspendisse fringilla et nisi et mattis. Curabitur sed finibus nisi. Integer nibh sapien, vehicula et auctor."
       />
-    {/* </Container> */}
-  </div>
+    </Container>
+  </Section>
 );
 
-const styles = css`
+const Section = styled.div`
   width: 100%;
   min-height: 100vh;
   text-align: center;

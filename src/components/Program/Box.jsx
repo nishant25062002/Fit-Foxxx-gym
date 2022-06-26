@@ -1,20 +1,21 @@
 import { css } from "@emotion/react";
 import React from "react";
 // import DumbbellIcon from "../Image/dumbbell.png";
+import styled from 'styled-components';
 const DumbbellIcon=0;
 
 const Box = ({ title, desc }) => (
-  <div css={styles} className="card">
+  <Section className="card">
     <img src={DumbbellIcon} alt="dumbbell" />
     <div className="cardInfo">
       <h4>{title}</h4>
       <p>{desc}</p>
       <a href="#/">DISCOVER MORE</a>
     </div>
-  </div>
+  </Section>
 );
 
-const styles = css`
+const Section = styled.div`
   width: 100%;
   max-width: 47%;
   display: flex;

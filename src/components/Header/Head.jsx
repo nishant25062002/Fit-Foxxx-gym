@@ -1,7 +1,9 @@
 import React from 'react'
-
+import './Head.css';
+import './Header.css';
 function Head() {
     return (
+        <>
         <div className='Head'>
             <div className="Head1">
                 Fit Foxx
@@ -15,6 +17,7 @@ function Head() {
                 </button>
             </div>
         </div>
+        </>
     )
 }
 
