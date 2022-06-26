@@ -1,0 +1,42 @@
+.wrapper{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.first-content{
+    flex:50%;
+}
+.content__text{
+    width: 80%;
+    margin: auto;
+    
+}
+.second-video{
+    flex: 50%;
+    
+}
+.content__video{
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px){
+    .wrapper{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .content__text{
+        width: 100%;
+    }
+    .content__video{
+        width: 100%;
+    }
+}
