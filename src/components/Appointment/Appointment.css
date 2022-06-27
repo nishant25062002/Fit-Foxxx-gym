@@ -28,6 +28,9 @@
 .appointment__form input::placeholder {
 	color: #ffffff;
 }
+.appointment__form input[type=date]{
+	padding-right: 15px;
+}
 
 .appointment__form textarea {
 	width: 100%;

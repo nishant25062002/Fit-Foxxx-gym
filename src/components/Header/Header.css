@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
 .Header{
   display: flex;
   justify-content: space-around;
@@ -13,18 +14,31 @@
 .Header_options>div{
     font-size: 18px;
     font-weight: 500;
+    color: #fbb034;
+    
 }
 .Header_socialApp{
     display: flex;
     width: 10%;
     justify-content: space-between;
 }
-.Header_socialApp>div{
+.Header_socialApp div:first-child{
+
+    color: #4267B2;
     
+}
+.Header_socialApp div:nth-child(2){
+    color:#e1306c;
+}
+.Header_socialApp div:nth-child(3){
+    color: #25D366;
+}
+.Header_socialApp div:last-child{
+    color: #00b9ff;
 }
 .Head{
     z-index: 1;
-    height: 10vh;
+    height: 12vh;
     width: 100%;
     background-color: white;
     color: gray;
@@ -49,7 +63,15 @@
     height: 45px;
     width: 100px;
     font-weight: bold;
+    background-color: #fbb034;
 }
 .Head2_div{
 
+    margin-right: 15px;
+    font-family: 'Poppins';
+
+}
+.Head1 img{
+    width: 80px;
+    height: 70px;
 }

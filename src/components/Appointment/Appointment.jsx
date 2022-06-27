@@ -28,9 +28,8 @@ function Appointment() {
                             <input type="text" placeholder="Phone"/>
                         </div>
                         <div class="col-lg-6">
-                            <select class="class-select">
-                                <option value="">Choose Your Class</option>
-                            </select>
+                        <input  type="date" id="date" name="date">
+                            </input>
                         </div>
                         <div class="col-lg-12 text-center">
                             <textarea placeholder="Message"></textarea>

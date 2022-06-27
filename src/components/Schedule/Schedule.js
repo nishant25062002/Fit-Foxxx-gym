@@ -15,6 +15,7 @@ const Schedule = () => {
 
   return (
     <section className="schedule" id="schedule">
+   
       <h2>
         CLASSES <span>SCHEDULE</span>
       </h2>

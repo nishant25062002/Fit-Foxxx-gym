@@ -6,7 +6,7 @@ function Head() {
         <>
         <div className='Head'>
             <div className="Head1">
-                Fit Foxx
+                <img src="./Images/logo_gym.png"></img>
             </div>
             <div className="Head2">
                 <div className="Head2_div">

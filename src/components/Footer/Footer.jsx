@@ -61,7 +61,7 @@ function Footer() {
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="footer__copyright__text">
-                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | FitBoxx Gym <i class="fa fa-heart" aria-hidden="true"></i> </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
