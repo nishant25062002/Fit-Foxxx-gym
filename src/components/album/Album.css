@@ -1,11 +1,11 @@
-.gallery{
-   
+.gallery {
     width: 100%;
     height: auto;
     text-align: center;
 }
-.img-style{
-    width: 300px;
-    height: 300px;
+
+.img-style {
+    width: 350px;
+    height: 280px;
     padding: 5px;
 }

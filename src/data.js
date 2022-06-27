@@ -20,10 +20,10 @@ export const data = [
  {
     img: "./Images/g7.jpg",
  },
- {
-    img: "./Images/g8.jpg",
- },
- {
-    img: "./Images/g9.jpg",
- },
+//  {
+//     img: "./Images/g8.jpg",
+//  },
+//  {
+//     img: "./Images/g9.jpg",
+//  },
 ];

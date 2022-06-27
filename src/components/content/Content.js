@@ -1,11 +1,15 @@
 import React from "react";
 import './Content.css';
+import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
 
 const Content = () => {
   return (
     <div className="wrapper">
-      <div className="first-content">
         <div className="content__text">
+          <div className="Head_about">
+            Our Methods
+          <div className="border_head"></div>
+          </div>
           <p className="para__text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -17,15 +21,15 @@ const Content = () => {
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum.
           </p>
+          <div className="Content_right Content_button"> More about us 
+            <ArrowUpwardRoundedIcon className="ArrowAbout"/>
+          </div>
         </div>
-      </div>
 
-      <div className="second-video">
         <div className="content__video">
-          <iframe width="420" height="345" src="https://www.youtube.com/embed/x-upKQJ7zxM">
+          <iframe width="100%" height="345" src="https://www.youtube.com/embed/x-upKQJ7zxM">
           </iframe>
         </div>
-      </div>
     </div>
   );
 };
