@@ -7,6 +7,7 @@ import Schedule from '../Schedule/Schedule'
 import Footer from '../Footer/Footer'
 import Content from '../content/Content'
 import Album from '../album/Album'
+import Contact from '../contact/Contact'
 
 function Main() {
   return (
@@ -18,6 +19,7 @@ function Main() {
     <Appointment/>
     <Schedule/>
     <Footer/>
+
         </>
   )
 }
