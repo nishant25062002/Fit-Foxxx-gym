@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const Subtitle = () => (
   <Section >
-    Training Studio is free CSS template for gyms and fitness centers. You are{" "}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
     <br />
-    allowed to use this layout for your business website.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
   </Section>
 );
 

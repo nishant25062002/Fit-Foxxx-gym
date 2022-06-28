@@ -5,6 +5,8 @@ import '../CSS/bootstrap.css';
 
 function Footer() {
   return (
+   
+ 
     <Section>
         <section class="footer">
         <div class="container">
@@ -75,13 +77,19 @@ function Footer() {
                 </div>
             </div>
         </div>
+
+       
     </section>
     </Section>
+
+    
+   
   )
 }
 
 export default Footer
 
+const Wrapper=styled.div``
 const Section = styled.div`
 .footer {
   background: $heading-color;

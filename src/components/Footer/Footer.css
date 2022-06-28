@@ -4,6 +4,10 @@
 	/* padding-top: 70px; */
     width: 100vw;
 }
+.Map{
+    text-align: center;
+    margin: auto;
+}
 
 .footer__about {
 	margin-bottom: 30px;

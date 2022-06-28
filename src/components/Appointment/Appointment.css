@@ -1,15 +1,37 @@
+.appointment__wrap{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 20px;
+
+}
 
 .appointment {
 	position: relative;
 	z-index: 9;
+	width: 90%;
+	
 }
 
 .appointment .section-title h2 {
 	color: #ffffff;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.section-title h1{
+	color: #fbb034 !important;
+	text-align: center;
+   
 }
 
 .appointment__text {
-	background: #5768AD;
+/* Created with https://www.css-gradient.com */
+background: #FEF701;
+background: -webkit-linear-gradient(bottom, #FEF701, #010101);
+background: -moz-linear-gradient(bottom, #FEF701, #010101);
+background: linear-gradient(to top, #FEF701, #010101);
 	padding: 60px 100px;
 }
 
@@ -23,6 +45,10 @@
 	background: rgba(255, 255, 255, 0.2);
 	border: none;
 	margin-bottom: 20px;
+}
+.Map{
+	width: 100%;
+
 }
 
 .appointment__form input::placeholder {

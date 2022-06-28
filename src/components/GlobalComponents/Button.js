@@ -17,6 +17,7 @@ const styles = css`
   transition: background 500ms ease-in-out;
   &:hover {
     background: #f9735b;
+    
   }
 `;
 
