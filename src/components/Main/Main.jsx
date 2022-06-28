@@ -15,19 +15,18 @@ import Instructor from '../Instructor/Instructor'
 function Main() {
   return (
     <div className='Main'>
-      <Home />
+      <Home/>
       <Content />
       <HeadLine name={"Our Gallery"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
       <Album />
       <HeadLine name={"Our Programs"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
-      <Program />
+      <Program />``
       <HeadLine name={"Meet Our Instructor"} desc={"This is the beautiful yogi and yoginis that have shared their journey and growth with us. Take a look!"}/>
       <Instructor/>
-      <Contact/>
+      {/* <Contact/> */}
       <HeadLine name={"Our Schedule"} desc={"This is the beautiful yogi and yoginis that have shared their journey and growth with us. Take a look!"}/>
       <Schedule />
       <Appointment />
-      
       <Footer />
     </div>
   )
