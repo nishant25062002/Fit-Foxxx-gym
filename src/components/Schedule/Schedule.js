@@ -7,6 +7,7 @@ import ScheduleLinks from "./ScheduleLinks";
 import Table from "./Table";
 import Container from "../GlobalComponents/Container";
 import './Schedule.css'
+import HeadLine from "../GlobalComponents/Head";
 
 const Schedule = () => {
 
@@ -15,16 +16,15 @@ const Schedule = () => {
 
   return (
     <section className="schedule" id="schedule">
-   
-      <h2>
+      {/* <h2>
         CLASSES <span>SCHEDULE</span>
-      </h2>
-      <Icon />
-      <p>
+      </h2> */}
+      {/* <Icon /> */}
+      {/* <p>
         Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra
         <br />
         ipsum dolor, ultricies fermentum massa consequat eu.
-      </p>
+      </p> */}
       <Container>
         <ScheduleLinks setDay={setDay} day={day} />
         <Table day={day} />
@@ -35,8 +35,8 @@ const Schedule = () => {
 
 const styles = css`
   width: 100%;
-  padding: 120px 0;
-  min-height: 100vh;
+  padding: 0px 0;
+  /* min-height: 100vh; */
   text-align: center;
   background: url('${scheduleBg}') no-repeat center/cover;
   h2 {

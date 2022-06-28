@@ -43,15 +43,21 @@
     background-color: white;
     color: gray;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .Head1{
-    color: gray;
+    color: rgb(215, 182, 35);
+    display: flex;
+    width: 30%;
+    justify-content: center;
 }
 .Head2{
     align-items: center;
     display: flex;
+    width: 65%;
+    justify-content: flex-end;
+    padding-right: 5%;
 }
 .Head2>button{
     display: flex;
@@ -67,11 +73,15 @@
 }
 .Head2_div{
 
-    margin-right: 15px;
+    margin-right: 45px;
     font-family: 'Poppins';
 
 }
 .Head1 img{
     width: 80px;
     height: 70px;
+}
+.activeTab{
+    border-bottom: 2.5px solid #fd9c00;
+    padding: 0 6px;
 }

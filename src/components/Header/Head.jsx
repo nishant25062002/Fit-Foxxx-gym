@@ -5,8 +5,9 @@ function Head() {
     return (
         <>
         <div className='Head'>
-            <div className="Head1">
-                <img src="./Images/logo_gym.png"></img>
+            <div className="Head1" style={{fontSize:"32px",fontWeight:"700",letterSpacing:"1px"}}>
+                {/* <img src="./Images/logo_gym.png"></img> */}
+                Fit Boxxx
             </div>
             <div className="Head2">
                 <div className="Head2_div">

@@ -8,9 +8,9 @@ import styled from 'styled-components';
 
 const Program = () => (
   <Section className="gymProgram">
-    <Title />
-    <Icon />
-    <SubTitle />
+    {/* <Title /> */}
+    {/* <Icon /> */}
+    {/* <SubTitle /> */}
     <Container>
       <Box
         title="Basic Fitness"
@@ -44,12 +44,12 @@ const Section = styled.div`
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  padding: 120px 0;
+  padding: 0px 0;
   .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 0px 0;
   }
   @media (max-width: 700px) {
     .container {

@@ -6,10 +6,12 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 function Header() {
+    // const [pathName,setPathName]=useState(window.location.pathname)
+
     return (
         <div className='Header'>
             <div className="Header_options">
-                <div>Home</div>
+                <div className={'activeTab'}>Home</div>
                 <div>About</div>
                 <div>Classes</div>
                 <div>Blog</div>

@@ -1,4 +1,3 @@
-import { css } from "@emotion/react";
 import React from "react";
 // import DumbbellIcon from "../Image/dumbbell.png";
 import styled from 'styled-components';
@@ -6,7 +5,7 @@ const DumbbellIcon=0;
 
 const Box = ({ title, desc }) => (
   <Section className="card">
-    <img src={DumbbellIcon} alt="dumbbell" />
+    <img src={DumbbellIcon} alt="img" />
     <div className="cardInfo">
       <h4>{title}</h4>
       <p>{desc}</p>
@@ -17,10 +16,11 @@ const Box = ({ title, desc }) => (
 
 const Section = styled.div`
   width: 100%;
-  max-width: 47%;
+  /* max-width: 47%; */
   display: flex;
   text-align: left;
   margin: 30px 0;
+  padding: 30px 30px;
   img {
     margin-right: 30px;
   }
