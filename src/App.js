@@ -10,8 +10,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Main />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<Main />} />
       </Routes>
     </Router>
   );
