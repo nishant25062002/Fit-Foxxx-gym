@@ -68,6 +68,9 @@
 	color: #ffffff;
 	margin-bottom: 25px;
 }
+.footer__widget ul{
+	padding-left: 0;
+}
 
 .footer__widget ul li {
 	list-style: none;
@@ -101,6 +104,7 @@
 	font-size: 14px;
 	color: #6e7580;
 	margin-bottom: 0;
+	margin-left: 60px;
 }
 
 .footer__copyright__text i {

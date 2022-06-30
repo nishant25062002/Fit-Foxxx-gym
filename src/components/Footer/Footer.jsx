@@ -15,8 +15,9 @@ function Footer() {
                     <div class="footer__about">
                         <img src="img/footer-logo.png" alt="" />
                         <ul>
-                            <li><i class="fa fa-clock-o"></i> Mon - Fri: 6:30am - 07:45pm</li>
-                            <li><i class="fa fa-clock-o"></i> Sat - Sun: 8:30am - 05:45pm</li>
+                            <li><i class="fa fa-clock-o"></i> Mon - Fri: 6:00am - 10:00pm</li>
+                            <li><i class="fa fa-clock-o"></i> Sat - 6:00am - 10:00pm</li>
+                            <li><i class="fa fa-clock-o"></i> Sunday - Closed</li>
                         </ul>
                         <form action="#" class="subscribe-form">
                             <input type="text" placeholder="Your Email" />
@@ -26,13 +27,14 @@ function Footer() {
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
                     <div class="footer__widget">
-                        <h5>Inspiration</h5>
+                        <h5>Our Programmes</h5>
                         <ul>
-                            <li><a href="#">Online Pilates</a></li>
-                            <li><a href="#">Yoga for Beginners</a></li>
-                            <li><a href="#">Online Pilates</a></li>
-                            <li><a href="#">Online Yoga</a></li>
-                            <li><a href="#">Conditioning</a></li>
+                            <li><a href="#">Weight Gain</a></li>
+                            <li><a href="#">Weight Loss</a></li>
+                            <li><a href="#">Zumba Classes</a></li>
+                            <li><a href="#">Muscle Training</a></li>
+                            <li><a href="#">PCOD &amp; PCOS</a></li>
+                            <li><a href="#">Diabetic </a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,8 +45,9 @@ function Footer() {
                             <li><a href="#">Our Vision</a></li>
                             <li><a href="#">Our Mission</a></li>
                             <li><a href="#">Meet The Team</a></li>
-                            <li><a href="#">Introduce</a></li>
-                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -52,24 +55,24 @@ function Footer() {
                     <div class="footer__widget">
                         <h5>Contact Us</h5>
                         <ul class="footer-address">
-                            <li><i class="fa fa-phone"></i> (01) 436 8888</li>
+                            <li><i class="fa fa-phone"></i> 99972 81881</li>
                             <li><i class="fa fa-envelope"></i> hello@zogin.com</li>
-                            <li><i class="fa fa-location-arrow"></i> 828 Granville Lights Suite 466</li>
+                            <li><i class="fa fa-location-arrow"></i>526,yash plaza 1st floor kanwali road vasant vihar, above suvidha mega mart, Dehradun, Uttarakhand 248006</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer__copyright">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    {/* <div class="col-lg-6 col-md-6 col-sm-6"> */}
                         <div class="footer__copyright__text">
-                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | FitBoxx Gym <i class="fa fa-heart" aria-hidden="true"></i> </p>
+                            <p>  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | FitBoxx Gym <i class="fa fa-heart" aria-hidden="true"></i> </p>
                         </div>
-                    </div>
+                    {/* </div> */}
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="footer__copyright__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/fitboxxgym/?hl=en"><i class="fa fa-instagram"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-linkedin"></i></a>
                         </div>
