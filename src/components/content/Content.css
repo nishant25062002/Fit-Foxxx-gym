@@ -82,6 +82,10 @@
     font-weight: 500;
     /* transform: skewX(-4deg); */
   }
+  .para__text span{
+    color: #fbb034;
+    font-size: 17px;
+  }
   /* .Conright:hover:before {
     -webkit-transform: skewX(0deg);
     -moz-transform: skewX(0deg);

@@ -105,6 +105,25 @@
 	.appointment__text {
 		padding: 60px 30px;
 	}
+	.Fitboxx_logo img{
+	width: 200px;
+    margin-left: 20px;
+	}
+	.conn {
+		margin-top: 7px;
+	
+	top: 0.938rem;
+	right: 1.813rem;
+	}
+	.hidden {
+		width: 24px;
+		height: 0px;
+		border: 1px solid #000000;
+		display: block;
+		margin-bottom: 7px;
+		cursor: pointer;
+		background:black;
+	}
 	.hero__sliders.owl-carousel .owl-nav button {
 		position: relative;
 		left: 15px;
