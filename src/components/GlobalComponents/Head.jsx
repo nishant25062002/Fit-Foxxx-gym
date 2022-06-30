@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function HeadLine({ name,desc }) {
+function HeadLine({ name, desc }) {
     return (
         <Section>
             <div>
@@ -46,5 +46,23 @@ p{
     font-size: 16px;
     font-weight: 600;
     color: gray;
+   }
+   @media screen and (max-width: 760px){
+    margin:14px 0;
+    span{
+    margin:7px !important;
+    font-size: 23px;
+   }
+   p{
+    width:50px;
+    height: 5px;
+   }
+   h6{
+    margin: 0 22px;
+    font-size: 12px;
+    text-align:center;
+    font-weight: 600;
+    color: gray;
+   }
    }
 `;

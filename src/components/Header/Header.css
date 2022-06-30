@@ -85,3 +85,15 @@
     border-bottom: 2.5px solid #fd9c00;
     padding: 0 6px;
 }
+@media(max-width:769px) {
+.Header{
+    margin: 0;
+    padding: 0;
+}
+.Header_options{
+    width: 100%;
+}
+    .Header_socialApp{
+        display: none;
+    }
+}

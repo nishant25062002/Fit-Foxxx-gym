@@ -22,7 +22,7 @@ function Header() {
                 </div>
 
                 <div onClick={() => { navigate('/classses'); setPathName('/classses') }} className={pathName == '/classses' ? 'activeTab' : ''}>
-                    Classes
+                    Courses
                 </div>
 
                 <div onClick={() => { navigate('/blog'); setPathName('/blog') }} className={pathName == '/blog' ? 'activeTab' : ''}>
