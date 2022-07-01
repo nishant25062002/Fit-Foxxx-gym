@@ -2,12 +2,14 @@ import React from 'react'
 import Head from '../Header/Head'
 import Header from '../Header/Header'
 import './Blog.css'
+import Blog1 from './Blog1'
 
 function Blog() {
     return (
         <>
             <Head />
-            <div class="container mt-100 mt-60">
+            <Blog1/>
+            {/* <div class="container mt-100 mt-60">
                 <div class="row">
                     <div class="col-12 text-center">
                         <div class="section-title mb-4 pb-2">
@@ -94,7 +96,7 @@ function Blog() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
