@@ -100,11 +100,19 @@
 	margin-top: 20px;
 }
 
+.footer__copyright__text {
+
+	width: 100%;
+
+}
+
 .footer__copyright__text p {
 	font-size: 14px;
 	color: #6e7580;
-	margin-bottom: 0;
-	margin-left: 60px;
+	width: 90%;
+	margin: auto;
+	/* margin-bottom: 0;
+	margin-left: 60px; */
 }
 
 .footer__copyright__text i {

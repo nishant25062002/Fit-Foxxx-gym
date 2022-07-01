@@ -10,14 +10,14 @@ function Home({ pathName }) {
 
     return (
         <div className='Homee'>
-            <img className="desk" src="./Images/banner_FB.png" />
+            <img className="desk" src="./Images/banner.png" />
             <img className="mb-Homee" src="./Images/fb_I.webp" />
             {!pathName && <Head pathName={pathName} />}
             <Header pathName={pathName} />
             <div className="home_body">
                 <h2>FITBOXX GYM</h2>
                 {!pathName &&
-                    <> <h4>Here at fitbox we believe in making fitness</h4>
+                    <> <h4>Strong People , Stronger Nation</h4>
                         <button onClick={() => { setShowPop(true) }}>Become a member</button>
                     </>
                 }
