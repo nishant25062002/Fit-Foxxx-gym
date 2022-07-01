@@ -24,7 +24,7 @@ function Blog1() {
                                     {/* <!--img src="assets/img/image-heartbeat.jpg" className="img-responsive" alt="launch HTML5 Crowdfunding"--> */}
                                     <div className="video-frame">
                                         {/* <iframe src="https://player.vimeo.com/video/67938315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> */}
-                                        <img src="" alt="img" />
+                                        {/* <img src="./Images/Excercise.jpg" alt="img" /> */}
                                     </div>
                                     <p>Launch will enable you be in run  your own crowdfunding campaign, and be in complete control from concept to crowdfunding to launch.</p>
                                     {/* <h2>$10,350</h2> */}
@@ -71,7 +71,10 @@ function Blog1() {
                                 <div className="tab-content">
                                     <div role="tabpanel" className="tab-pane active" id="about">
                                         <div className="about-information">
-                                            <h1 className="section-title">ABOUT LAUNCH</h1>
+											<div className="">
+												<img src="./Images/Obesity.jpg" alt=""></img>
+											</div>
+                                            <h1 className="section-title">OBESITY</h1>
                                             <p>A very famous quote that we all have been listening from our childhood is "Health is wealth ", and as we grow older, we get to know the real value of this saying.
                                                 One of the most important component of good health is the weight and Maintaining a good weight is important for good health.
                                                 Overweight and obesity are turning out to be a big problem for the world in today's time.
@@ -89,36 +92,60 @@ function Blog1() {
                                                 Overeating due to loneliness, anxiety in today's fast and ever changing world is another common thing that is affecting the world in a negative way.
 
 
+												<div className="">
+												<img src="./Images/Hypertension.jpg" alt=""></img>
+											</div>
+
                                                 WEIGHT LOSS AS IMPORTANT STEP IN TODAY'S WORLD
 
                                                 There are many health risks of overweight and obesity.
                                                 Accumulation of weight above average may lead to high blood pressure, heart diseases, stroke, metabolic syndrome,  liver diseases,  osteoarthritis etc
                                                 People can lose weight and maintain the loss by taking several steps
 
-                                                <h6>1) Engaging in regular physical activity and exercise</h6>
+							
+                                                <h3>1) Engaging in regular physical activity and exercise</h3>
+
+												<div className="">
+												<img src="./Images/Physical.png" alt=""></img>
+											</div>
+
 
                                                 This is the kind of the step which will ask you for your discipline,  perseverance and dedication.  Engaging in the regular physical exercises and going to the Gym have really helped people worldwide to get the rid of the overweightness. Gym can really help you lose weight, but only if you are ready to push yourself and ready to sacrifice many things.
                                                 Gyms usually have trainers who have a good in depth knowledge of the fields and can provide with the right guidance.
 
-                                                <h6> 2)Proper and healthy diet</h6>
+											
+                                                <h3> 2)Proper and healthy diet</h3>
+
+												<div className="">
+												<img src="./Images/Healthy_Food (1).jpg" alt=""></img>
+											</div>
 
                                                 Exclusion of the junk food and inclusion of healthful meals and snacks with fruits and vegetables and proteins should form the base of your diet.
                                                 Baked things, oily things,  fatty meats, extra sugary things must be avoided.
                                                 Moreover, if you have joined a gym, the proper diet chart can be provided to you as well.
 
-                                                <h6>3) Engage socially</h6>
+											
+                                                <h3>3) Engage socially</h3>
+
+												<div className="">
+												<img src="./Images/Social.jpg" alt=""></img>
+											</div>
 
                                                 As discussed above, loneliness and overeating can easily be connected. Hence it is very much necessary to embrace the support of loved ones. One must have a positive social network, exercise clubs or partners.
 
-                                                <h6>4) Managing stress levels</h6>
+                                                <h3>4) Managing stress levels</h3>
+
+
+												<div className="">
+												<img src="./Images/Stress.jpg" alt=""></img>
+											</div>
 
                                                 People who are under constant stress have witnessed a increase in their appetite.
                                                 The management of the stress can be done by yoga, meditation,  breathing and relaxing techniques and spending time outdoors with your loved and caring ones.
 
                                                 One must remember at last that our body will be with us throughout our life and it must be our responsibility to take the proper care of the body as well as the health to live a fruitful life.
                                                 When it comes to weight loss, it will never be easy at the start and will demand out of the skin hard work from your side,  only to give the benefits in the long run.</p>
-                                            <p>Quisque fermentum blandit ex at commodo. Nulla facilisi. Pellentesque porttitor nisi tellus, at gravida mi interdum et. Nulla vestibulum imperdiet libero eget mattis. Vestibulum porttitor, nibh quis sagittis tincidunt, velit orci molestie magna, in congue tortor mauris sit amet eros. Nam dictum gravida tempus.</p>
-                                        </div>
+                                              </div>
                                     </div>
                                     <div role="tabpanel" className="tab-pane" id="updates">
                                         <div className="update-information">

@@ -21,6 +21,9 @@
     z-index: -1;
     object-fit: cover;
 }
+.mb-Homee{
+    display: none;
+}
 .Homee_Path{
     /* background-color: rgba(54, 53, 53, 0.731); */
     height: 70vh;
@@ -79,11 +82,36 @@
     color: #fbb034;
    
 }
+.home_body{
+    display: none;
+}
 @media(max-width:769px) {
     .home_body>h2{
         font-family: 'Poppins', sans-serif;
         font-size: 3rem;
         color: #fbb034;
        
+    }
+    .mb-Homee{
+        display: block;
+        object-fit: fill;
+    }
+    .desk{
+display: none;
+    }
+    .home_body{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 90vh;
+        width: 700px;
+        max-width: 90vw;
+        /* background-color: rgba(54, 53, 53, 0.731); */
+    }
+    .Homee{
+        background-color: rgba(54, 53, 53, 0.731);
     }
 }

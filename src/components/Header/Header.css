@@ -51,6 +51,7 @@
     display: flex;
     width: 30%;
     justify-content: center;
+    cursor: pointer;
 }
 .Head2{
     align-items: center;
@@ -87,10 +88,31 @@
     border-bottom: 2.5px solid #fd9c00;
     padding: 0 6px;
 }
+.phone-m{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+  
+}
+.mb-whatsapp{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: -3px;
+   
+}
 @media(max-width:769px) {
-    .Head2{
-        display:none ;
-      }
+    .right-icons{
+        display: flex;
+        align-items: center;
+        justify-content: inherit;
+    }
+    .Head2_div{
+        display: none;
+    }
+    .Head button{
+        display: none;
+    }
 .Header{
     margin: 0;
     padding: 0;
@@ -106,8 +128,12 @@
     }
     .Head1>img{
         height: 40px;
+        margin-left: 15px;
     }
     .Header_options{
         display: none;
     }
+   
+   
+    
 }

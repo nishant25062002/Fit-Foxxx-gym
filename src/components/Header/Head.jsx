@@ -64,24 +64,34 @@ function Head() {
   return (
     <>
       <div className='Head'>
-        <div className="Head1" style={{ fontSize: "32px", fontWeight: "700", letterSpacing: "1px" }}>
+        <div onClick={() => { navigate('/'); setPathName('/') }} className="Head1" style={{ fontSize: "32px", fontWeight: "700", letterSpacing: "1px" }}>
           <img src="https://firebasestorage.googleapis.com/v0/b/fitboxx-gym.appspot.com/o/Logos%2Ffitboxx.jpeg?alt=media&token=cc9ca798-5e1b-4ed6-8a91-16e16d5054c6"></img>
           {/* Fit Boxxx */}
         </div>
         <div className="Head2">
-          <div className="Head2_div">
-            Contact Number: 89823799712
-          </div>
-          <button>
-            Join Us
-          </button>
-        </div>
-        <div className="conn" onClick={toggleDrawer}>
+        <div className="mb-phone">
+          <a href="tel:+91-89823799712"><img className="phone-m" src="./Images/phone.png" alt="" /></a>
+         </div>
+         <div className="mb-whatsapp">
+         <a href="whatsapp://send?phone=+91-89823799712"><img className="mb-whatsapp" src="./Images/whatsapp.png"></img></a>
+
+         </div>
+         <div className="conn" onClick={toggleDrawer}>
           <a href="#" class="hidden"></a>
           <a href="#" class="hidden"></a>
           <a href="#" class="hidden"></a>
 
         </div>
+          <div className="Head2_div">
+            Contact Number: 89823799712
+          </div>
+        
+          <button>
+            Join Us
+          </button>
+        </div>
+      
+       
       </div>
 
       <Drawer

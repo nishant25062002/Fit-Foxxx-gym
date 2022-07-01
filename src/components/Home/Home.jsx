@@ -10,10 +10,11 @@ function Home({ pathName }) {
 
     return (
         <div className='Homee'>
-            <img src="./Images/banner_FB.png" />
+            <img className="desk" src="./Images/banner_FB.png" />
+            <img className="mb-Homee" src="./Images/fb_I.webp" />
             {!pathName && <Head pathName={pathName} />}
             <Header pathName={pathName} />
-            {/* <div className="home_body">
+            <div className="home_body">
                 <h2>FITBOXX GYM</h2>
                 {!pathName &&
                     <> <h4>Here at fitbox we believe in making fitness</h4>
@@ -24,7 +25,7 @@ function Home({ pathName }) {
                     <> <h4>/ Contact Us</h4>
                     </>
                 }
-            </div> */}
+            </div>
             {showPop &&
                 <Container>
 

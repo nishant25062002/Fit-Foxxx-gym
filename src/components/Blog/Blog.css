@@ -104,3 +104,8 @@ body{
     .section-title h4{
         color:  #fbb034;
     }
+    .main-content img{
+      width: 600px;
+      height: auto;
+      margin: 15px 0;
+    }
