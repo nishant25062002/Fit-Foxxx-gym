@@ -16,6 +16,7 @@ const Menu2 = styled.div`
     font-weight: 400;
     font-size: 18px;
     margin: 13.75px;
+    margin-left:25px;
     font-family: "Roboto";
     font-style: normal;
   }

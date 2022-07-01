@@ -15,7 +15,7 @@ const Schedule = () => {
   const [day, setDay] = useState("Monday");
 
   return (
-    <section className="schedule" id="schedule">
+    <section className="schedule stripe" id="schedule">
       {/* <h2>
         CLASSES <span>SCHEDULE</span>
       </h2> */}
