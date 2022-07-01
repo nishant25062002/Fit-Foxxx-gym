@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import styled from 'styled-components';
 import '../CSS/bootstrap.css';
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 function Footer() {
   return (
@@ -13,7 +14,7 @@ function Footer() {
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="footer__about">
-                        <img src="img/footer-logo.png" alt="" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/fitboxx-gym.appspot.com/o/Logos%2Ffitboxx.jpeg?alt=media&token=cc9ca798-5e1b-4ed6-8a91-16e16d5054c6" alt="" style={{width:'200px'}}/>
                         <ul>
                             <li><i class="fa fa-clock-o"></i> Mon - Fri: 6:00am - 10:00pm</li>
                             <li><i class="fa fa-clock-o"></i> Sat - 6:00am - 10:00pm</li>
@@ -21,7 +22,10 @@ function Footer() {
                         </ul>
                         <form action="#" class="subscribe-form">
                             <input type="text" placeholder="Your Email" />
-                            <button type="submit"><i class="fa fa-send"></i></button>
+                            <button type="submit">
+                              {/* <i class="fa fa-send"></i> */}
+                              <TelegramIcon style={{fontSize:"30px"}}/>
+                              </button>
                         </form>
                     </div>
                 </div>
@@ -56,7 +60,7 @@ function Footer() {
                         <h5>Contact Us</h5>
                         <ul class="footer-address">
                             <li><i class="fa fa-phone"></i> 99972 81881</li>
-                            <li><i class="fa fa-envelope"></i> hello@zogin.com</li>
+                            <li><i class="fa fa-envelope"></i>fitboxxgym@gmail.com</li>
                             <li><i class="fa fa-location-arrow"></i>526,yash plaza 1st floor kanwali road vasant vihar, above suvidha mega mart, Dehradun, Uttarakhand 248006</li>
                         </ul>
                     </div>
