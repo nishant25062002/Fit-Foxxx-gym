@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import './Head.css';
 import './Header.css';
 import Drawer from 'react-modern-drawer'
@@ -26,6 +26,7 @@ const Menu2 = styled.div`
     z-index: 999;
     background: white;
     transition: 0.3s;
+    
     ul {
       display: flex;
       flex-direction: column;
@@ -52,37 +53,37 @@ const Menu2 = styled.div`
 `;
 
 function Head() {
-    const [isOpen, setIsOpen] = React.useState(false)
-    const toggleDrawer = () => {
-        setIsOpen((prevState) => !prevState)
-    }
-    const [pathName, setPathName] = useState(window.location.pathname)
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState)
+  }
+  const [pathName, setPathName] = useState(window.location.pathname)
 
-    const navigate = useNavigate();
-    return (
-        <>
-        <div className='Head'>
-            <div className="Head1" style={{fontSize:"32px",fontWeight:"700",letterSpacing:"1px"}}>
-                {/* <img src="./Images/logo_gym.png"></img> */}
-                Fit Boxxx
-            </div>
-            <div className="Head2">
-                <div className="Head2_div">
-                    Contact Number: 89823799712
-                </div>
-                <button>
-                    Join Us
-                </button>
-            </div>
-            <div className="conn" onClick={toggleDrawer}>
-        <a href="#" class="hidden"></a>
-            <a href="#" class="hidden"></a>
-            <a href="#" class="hidden"></a>
-
-            </div>
+  const navigate = useNavigate();
+  return (
+    <>
+      <div className='Head'>
+        <div className="Head1" style={{ fontSize: "32px", fontWeight: "700", letterSpacing: "1px" }}>
+          <img src="https://firebasestorage.googleapis.com/v0/b/fitboxx-gym.appspot.com/o/Logos%2Ffitboxx.jpeg?alt=media&token=cc9ca798-5e1b-4ed6-8a91-16e16d5054c6"></img>
+          {/* Fit Boxxx */}
         </div>
+        <div className="Head2">
+          <div className="Head2_div">
+            Contact Number: 89823799712
+          </div>
+          <button>
+            Join Us
+          </button>
+        </div>
+        <div className="conn" onClick={toggleDrawer}>
+          <a href="#" class="hidden"></a>
+          <a href="#" class="hidden"></a>
+          <a href="#" class="hidden"></a>
 
-        <Drawer
+        </div>
+      </div>
+
+      <Drawer
         open={isOpen}
         onClose={toggleDrawer}
         direction="right"
@@ -91,40 +92,40 @@ function Head() {
         <Menu2 className="Menu">
           <ul>
             <li>
-            <div onClick={() => { navigate('/'); setPathName('/') }} className={pathName == '/' ? 'activeTab' : ''}>
-                    Home
-                </div>
+              <div onClick={() => { navigate('/'); setPathName('/') }} className={pathName == '/' ? 'activeTab' : ''}>
+                Home
+              </div>
             </li>
             <li>
-            <div onClick={() => { navigate('/about'); setPathName('/about') }} className={pathName == '/about' ? 'activeTab' : ''} >
-                    About
-                </div>
+              <div onClick={() => { navigate('/about'); setPathName('/about') }} className={pathName == '/about' ? 'activeTab' : ''} >
+                About
+              </div>
             </li>
             <li>
-            <div onClick={() => { navigate('/classses'); setPathName('/classses') }} className={pathName == '/classses' ? 'activeTab' : ''}>
-                    Classes
-                </div>
+              <div onClick={() => { navigate('/classses'); setPathName('/classses') }} className={pathName == '/classses' ? 'activeTab' : ''}>
+                Classes
+              </div>
             </li>
             <li>
-            <div onClick={() => { navigate('/blog'); setPathName('/blog') }} className={pathName == '/blog' ? 'activeTab' : ''}>
-                    Blog
-                </div>
+              <div onClick={() => { navigate('/blog'); setPathName('/blog') }} className={pathName == '/blog' ? 'activeTab' : ''}>
+                Blog
+              </div>
             </li>
             <li>
-            <div onClick={() => { navigate('/contact'); setPathName('/contact') }} className={pathName == '/contact' ? 'activeTab' : ''} >
-                    Contact
-                </div>
+              <div onClick={() => { navigate('/contact'); setPathName('/contact') }} className={pathName == '/contact' ? 'activeTab' : ''} >
+                Contact
+              </div>
             </li>
-         
-        
+
+
           </ul>
           <div className="Fitboxx_logo">
-              <img src="./Images/Fitboxx_Logo.jpeg" alt="" />
+            <img src="./Images/Fitboxx_Logo.jpeg" alt="" />
           </div>
         </Menu2>
       </Drawer>
-        </>
-    )
+    </>
+  )
 }
 
 export default Head

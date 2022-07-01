@@ -13,22 +13,22 @@ import HeadLine from '../GlobalComponents/Head'
 import Instructor from '../Instructor/Instructor'
 
 function Main() {
+
   return (
     <div className='Main'>
       <Home/>
       <Content />
       <HeadLine name={"Our Gallery"} desc={"The Way to get ahead is to get started, Sore today, Stronger tomorrow."}/>
       <Album />
-      <HeadLine name={"Our Programs"} desc={"Be motivated by what you can do, not defeated by what you can't."}/>
-      <Program />``
+      {/* <HeadLine name={"Our Programs"} desc={"Be motivated by what you can do, not defeated by what you can't."}/>
+      <Program />`` */}
       <HeadLine name={"Our Instructor"} desc={"This is the beautiful yogi and yoginis that have shared their journey and growth with us. Take a look!"}/>
       <Instructor/>
       {/* <Contact/> */}
       <HeadLine name={"Our Schedule"} desc={"Push harder than yesterday if you want a different tomorrow !!"}/>
       <Schedule />
       <Appointment />
-      <Footer />
-    </div>
+     </div>
   )
 }
 

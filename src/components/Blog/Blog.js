@@ -1,11 +1,12 @@
 import React from 'react'
+import Head from '../Header/Head'
 import Header from '../Header/Header'
 import './Blog.css'
 
 function Blog() {
     return (
         <>
-            <Header />
+            <Head />
             <div class="container mt-100 mt-60">
                 <div class="row">
                     <div class="col-12 text-center">

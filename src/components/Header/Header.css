@@ -78,14 +78,19 @@
 
 }
 .Head1 img{
-    width: 80px;
-    height: 70px;
+    /* width: 90px; */
+    height: 50px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px -4px solid black;
 }
 .activeTab{
     border-bottom: 2.5px solid #fd9c00;
     padding: 0 6px;
 }
 @media(max-width:769px) {
+    .Head2{
+        display:none ;
+      }
 .Header{
     margin: 0;
     padding: 0;
@@ -94,6 +99,15 @@
     width: 100%;
 }
     .Header_socialApp{
+        display: none;
+    }
+    .Head1{
+        width: 70%;
+    }
+    .Head1>img{
+        height: 40px;
+    }
+    .Header_options{
         display: none;
     }
 }

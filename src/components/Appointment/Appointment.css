@@ -5,6 +5,8 @@
 	align-items: center;
 	margin-left: 10px;
 	margin-right: 20px;
+	margin-bottom: 20px ;
+	margin-top: 20px ;
 }
 
 .appointment {
@@ -27,10 +29,16 @@
 
 .appointment__text {
 	/* Created with https://www.css-gradient.com */
-	background: #FEF701;
-	background: -webkit-linear-gradient(bottom, #FEF701, #010101);
+	/* background: #FEF701; */
+	/* Created with https://www.css-gradient.com */
+	/* Created with https://www.css-gradient.com */
+background: #BDBB54;
+background: -webkit-linear-gradient(bottom right, #BDBB54, #010101);
+background: -moz-linear-gradient(bottom right, #BDBB54, #010101);
+background: linear-gradient(to top left, #BDBB54, #010101);
+	/* background: -webkit-linear-gradient(bottom, #FEF701, #010101);
 	background: -moz-linear-gradient(bottom, #FEF701, #010101);
-	background: linear-gradient(to top, #FEF701, #010101);
+	background: linear-gradient(to top, #FEF701, #010101); */
 	padding: 60px 30px;
 }
 
@@ -47,7 +55,8 @@
 }
 
 .Map {
-	width: 50%;
+	width: 100%;
+	/* margin: 20px 0; */
 }
 
 .Map>iframe {

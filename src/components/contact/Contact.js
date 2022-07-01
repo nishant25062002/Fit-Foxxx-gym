@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from '../Header/Head'
 import Header from '../Header/Header'
 import HomePath from '../Home/HomePath'
 import './Contact.css'
@@ -6,7 +7,8 @@ import './Contact.css'
 function Contact() {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
+    <Head pathName={'pathName'} />
       <div class="contact3 py-5">
         <div class="row no-gutters">
           <div class="container">
