@@ -59,9 +59,9 @@ function Footer() {
                     <div class="footer__widget">
                         <h5>Contact Us</h5>
                         <ul class="footer-address">
-                            <li><i class="fa fa-phone"></i> 99972 81881</li>
-                            <li><i class="fa fa-envelope"></i>fitboxxgym@gmail.com</li>
-                            <li><i class="fa fa-location-arrow"></i>526,yash plaza 1st floor kanwali road vasant vihar, above suvidha mega mart, Dehradun, Uttarakhand 248006</li>
+                            <li> 99972 81881</li>
+                            <li>fitboxxgym@gmail.com</li>
+                            <li>526,yash plaza 1st floor kanwali road vasant vihar, above suvidha mega mart, Dehradun, Uttarakhand 248006</li>
                         </ul>
                     </div>
                 </div>

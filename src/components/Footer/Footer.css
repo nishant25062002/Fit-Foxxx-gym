@@ -16,6 +16,7 @@
 .footer__about ul {
 	margin-bottom: 25px;
 	margin-top: 20px;
+	padding-left: 0;
 }
 
 .footer__about ul li {

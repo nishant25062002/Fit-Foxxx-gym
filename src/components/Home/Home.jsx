@@ -10,8 +10,8 @@ function Home({ pathName }) {
 
     return (
         <div className='Homee'>
-            <img className="desk" src="./Images/banner.png" />
-            <img className="mb-Homee" src="./Images/fb_I.webp" />
+            <img className="desk" src="./Images/banner.jpg" />
+            <img className="mb-Homee" src="./Images/Fb_II.webp" />
             {!pathName && <Head pathName={pathName} />}
             <Header pathName={pathName} />
             <div className="home_body">
