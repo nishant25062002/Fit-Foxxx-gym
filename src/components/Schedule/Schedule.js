@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Icon from "../GlobalComponents/Icon";
 import { css } from "@emotion/react";
 import scheduleBg from "../Image/scheduleBg.jpg";
@@ -8,14 +8,28 @@ import Table from "./Table";
 import Container from "../GlobalComponents/Container";
 import './Schedule.css'
 import HeadLine from "../GlobalComponents/Head";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Schedule = () => {
+  useEffect(
+
+    () =>{
+
+      AOS.init({duration: 2000});
+    },
+
+    []
+
+
+  );
+
 
   const [hidden, setHidden] = useState(false);
   const [day, setDay] = useState("Monday");
 
   return (
-    <section className="schedule stripe" id="schedule">
+    <section data-aos="ease-in"className="schedule stripe" id="schedule">
       {/* <h2>
         CLASSES <span>SCHEDULE</span>
       </h2> */}

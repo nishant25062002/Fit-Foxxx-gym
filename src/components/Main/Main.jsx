@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Main.css'
 import Appointment from '../Appointment/Appointment'
 import Home from '../Home/Home'
@@ -12,7 +12,12 @@ import HeadLine from '../GlobalComponents/Head'
 
 import Instructor from '../Instructor/Instructor'
 
+
 function Main() {
+
+  
+
+
 
   return (
     <div className='Main'>

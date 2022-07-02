@@ -6,11 +6,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+
 export default class Responsive extends Component {
+
+
   render() {
     var settings = {
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 4,
@@ -44,9 +47,10 @@ export default class Responsive extends Component {
       ]
     };
 
+   
 
   return (
-    <div className="gallery">
+    <div data-aos="ease-in" className="gallery">
        <Slider {...settings}>
       {
         data.map((elem, k) =>

@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './About.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const About = () => {
+
+  useEffect(
+
+    ()=>{
+
+      AOS.init({duration: 2000});
+    },
+
+    []
+
+
+  );
   return (
     <div className="about__container">
     
       <div className="about__flex">
-      <div className="left">
+      <div  data-aos="fade-left" className="left">
         <img className="left__img" src="./Images/Fb_II.webp"></img>
       </div>
-      <div className="right">
+      <div  data-aos="fade-right"  className="right">
         <div>
           <h3> About Me</h3>
         </div>

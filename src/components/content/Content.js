@@ -1,12 +1,25 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Content.css";
 import ArrowUpwardRoundedIcon from "@mui/icons-material/ArrowUpwardRounded";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Content = () => {
+  useEffect(
+
+    () =>{
+
+      AOS.init({duration: 2000});
+    },
+
+    []
+
+
+  );
   return (
     <div className="wrapper">
-      <div className="content__text">
-        <div className="Head_about">
+      <div data-aos="fade-left" className="content__text">
+        <div  className="Head_about">
           Our Methods
           <div className="border_head"></div>
         </div>
@@ -26,7 +39,7 @@ const Content = () => {
         </div>
       </div>
 
-      <div className="content__video">
+      <div  className="content__video">
         <iframe
           width="100%"
           height="345"
