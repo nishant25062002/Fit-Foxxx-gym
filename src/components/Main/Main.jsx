@@ -11,6 +11,7 @@ import Head from '../Header/Head'
 import HeadLine from '../GlobalComponents/Head'
 
 import Instructor from '../Instructor/Instructor'
+import Accordian from '../Accordian/Accordian'
 
 
 function Main() {
@@ -32,6 +33,7 @@ function Main() {
       {/* <Contact/> */}
       <HeadLine name={"Our Schedule"} desc={"Push harder than yesterday if you want a different tomorrow !!"}/>
       <Schedule />
+      <Accordian/>
       <Appointment />
      </div>
   )
