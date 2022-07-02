@@ -1,50 +1,59 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "../Header/Head";
-import './About.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import "./About.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
-
-  useEffect(
-
-    ()=>{
-
-      AOS.init({duration: 2000});
-    },
-
-    []
-
-
-  );
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <>
-    <Head/>
-    <div className="about__container">
-      <div className="about__flex">
-      <div  data-aos="fade-left" className="left">
-        <img className="left__img" src="./Images/Fb_II.webp"></img>
-      </div>
-      <div  data-aos="fade-right"  className="right">
-        <div>
-          <h3> About Me</h3>
+      <Head />
+      <div className="about__container">
+        <h2 style={{ textAlign: "center", marginTop: "10px" }}>
+          About Fitboxx
+        </h2>
+        <div className="about__flex">
+          <div data-aos="fade-left" className="left">
+            <img className="left__img" src="./Images/Fb_II.webp"></img>
+          </div>
+          <div data-aos="fade-right" className="right">
+            <p className="right__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
         </div>
-        <p className="right__text">
-
-          Name --Pinaaki sen Age --25 Height --5.8 Weight --off season 75kg .
-          Contest weight 65kg Body fat percentage--best condition 5to10% Fitness
-          training qualifications= certified Personal fitness trainer from
-          tejaswa muscle and supports academy dehradun Competitions participated
-          in -university contest , state championship, federation cup,Mr North
-          India Competitions won --inter university gold 60kg in 2009 ,Mr
-          Uttarakhand 65kg 4th in 2010 ,Mr Uttarakhand gold 65kg in 2013 , Mr
-          Uttarakhand gold 65kg gold in 2014,Mr Uttarakhand gold 65kg gold in
-          2015 Kind of trainings u can give -muscle building ,fat loss ,
-          metabolic , cross fits , aerobics , zumba , yoga
-        </p>
+        <div className="owner__container">
+          <div className="owner__left">
+          <img className="left__img" src="./Images/Fb_II.webp"></img>
+          </div>
+          <div className="owner__right">
+            <div className="owner__text">
+              <p> Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
     </>
   );
 };

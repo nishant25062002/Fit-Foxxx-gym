@@ -26,7 +26,11 @@ function Header() {
                 </div>
 
                 <div onClick={() => { navigate('/blog'); setPathName('/blog') }} className={pathName == '/blog' ? 'activeTab' : ''}>
-                    Blog
+                    Weight Gain
+                </div>
+
+                <div onClick={() => { navigate('/blog2'); setPathName('/blog2') }} className={pathName == '/blog' ? 'activeTab' : ''}>
+                   Hypertension
                 </div>
 
                 <div onClick={() => { navigate('/contact'); setPathName('/contact') }} className={pathName == '/contact' ? 'activeTab' : ''} >

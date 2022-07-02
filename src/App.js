@@ -5,6 +5,7 @@ import Contact from "./components/contact/Contact";
 import Classes from "./components/Classes/Classes";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
+import Blogg from "./components/Blog/Blogg";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog2" element={<Blogg />} />
         <Route path="*" element={<Main />} />
         <Route path="/aboutme" element={<About/>}/>
       </Routes>

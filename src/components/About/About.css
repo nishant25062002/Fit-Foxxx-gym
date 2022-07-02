@@ -27,6 +27,13 @@
     flex-wrap: wrap;
     margin: auto;
 }
+.owner__container{
+ 
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        
+}
 
 
 
@@ -38,7 +45,10 @@
         align-items: center;
         flex-direction: column;
     }
+    .owner__container{
 
+        flex-direction: column;
+    }
     
 
 }
