@@ -147,15 +147,17 @@ function Head() {
 
 
           </ul>
-          <div className="Fitboxx_logo">
+         
+          <div className="Header_socialApp" style={{display:'flex',bottom:'-100%',height:'100%',width:'100%'}}>
+                <div style={{height:'0px'}}><FacebookIcon /></div>
+                <div style={{height:'0px'}}><InstagramIcon /></div>
+                <div style={{height:'0px'}}><WhatsAppIcon /></div>
+                <div style={{height:'0px'}}><TwitterIcon /></div>
+            </div>
+
+            <div className="Fitboxx_logo">
             <img src="./Images/Fitboxx_Logo.jpeg" alt="" />
           </div>
-          <div className="Header_socialApp" style={{display:'flex',position:'absolute',bottom:'-100%',height:'100%',width:'100%'}}>
-                <div><FacebookIcon /></div>
-                <div><InstagramIcon /></div>
-                <div><WhatsAppIcon /></div>
-                <div><TwitterIcon /></div>
-            </div>
         </Menu2>
       </Drawer>
     </>
