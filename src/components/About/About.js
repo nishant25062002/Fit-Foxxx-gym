@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import Head from "../Header/Head";
 import './About.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -17,8 +18,9 @@ const About = () => {
 
   );
   return (
+    <>
+    <Head/>
     <div className="about__container">
-    
       <div className="about__flex">
       <div  data-aos="fade-left" className="left">
         <img className="left__img" src="./Images/Fb_II.webp"></img>
@@ -43,6 +45,7 @@ const About = () => {
       </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -5,6 +5,12 @@
   align-items: center;
   height: 10vh;
   width: 100%;
+  
+  /* background-color: #00b9ff; */
+}
+
+.mb-whatsapp{
+    display: none !important;
 }
 .Header_options{
     display: flex;
@@ -23,9 +29,7 @@
     justify-content: space-between;
 }
 .Header_socialApp div:first-child{
-
-    color: #4267B2;
-    
+    color: #4267B2; 
 }
 .Header_socialApp div:nth-child(2){
     color:#e1306c;
@@ -38,13 +42,20 @@
 }
 .Head{
     z-index: 1;
-    height: 10vh;
+    height: 8vh !important;
     width: 100%;
     background-color: white;
     color: gray;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 !important;
+    /* Created with https://www.css-gradient.com */
+/* background: #C5C975; */
+background: #131312;
+/* background: -webkit-linear-gradient(right, #C5C975, #CFBE6B);
+background: -moz-linear-gradient(right, #C5C975, #CFBE6B);
+background: linear-gradient(to left, #C5C975, #CFBE6B); */
 }
 .Head1{
     color: rgb(215, 182, 35);
@@ -80,7 +91,7 @@
 }
 .Head1 img{
     /* width: 90px; */
-    height: 50px;
+    height: 45px;
     border-radius: 3px;
     box-shadow: 0 0 15px -4px solid black;
 }
@@ -126,7 +137,7 @@
         width: 70%;
     }
     .Head1>img{
-        height: 40px;
+        height: 30px;
         margin-left: 15px;
     }
     .Header_options{
@@ -139,11 +150,10 @@
       
     }
     .mb-whatsapp{
-        width: 40px;
-        height: 40px;
-        display: inline-block;
-        margin-left: -3px;
-       
+        display: flex !important;
+    }
+    .Head2{
+        padding-right: 0%;
     }
     .Fitboxx_logo img{
         margin-bottom: 15px;

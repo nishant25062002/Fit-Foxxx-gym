@@ -5,6 +5,12 @@ import Drawer from 'react-modern-drawer'
 import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
 import 'react-modern-drawer/dist/index.css'
+import WhatsappRoundedIcon from '@mui/icons-material/WhatsappRounded';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Menu2 = styled.div`
   width: 100%;
@@ -78,14 +84,19 @@ function Head() {
         <div className="mb-phone">
           <a href="tel:+91-89823799712"><img className="phone-m" src="./Images/phone.png" alt="" /></a>
          </div>
-         <div className="mb-whatsapp">
-         <a href="whatsapp://send?phone=+91-89823799712"><img className="mb-whatsapp" src="./Images/whatsapp.png"></img></a>
+         <div style={{display:'flex',justifyContent:'center',alignItems:"center"}} className="">
+         <a  style={{display:'flex',justifyContent:'center',alignItems:"center"}} href="whatsapp://send?phone=+91-89823799712">
+          {/* <img className="mb-whatsapp" src="./Images/whatsapp.png"> */}
+            {/* </img> */}
+            <WhatsappRoundedIcon style={{fontSize:"27px", color: '#25D366',fontWeight:'700'}} className="mb-whatsapp"/>
+            </a>
 
          </div>
          <div className="conn" onClick={toggleDrawer}>
+          <MenuRoundedIcon fontSize='large'/>
+          {/* <a href="#" class="hidden"></a>
           <a href="#" class="hidden"></a>
-          <a href="#" class="hidden"></a>
-          <a href="#" class="hidden"></a>
+          <a href="#" class="hidden"></a> */}
 
         </div>
           <div className="Head2_div">
@@ -139,6 +150,12 @@ function Head() {
           <div className="Fitboxx_logo">
             <img src="./Images/Fitboxx_Logo.jpeg" alt="" />
           </div>
+          <div className="Header_socialApp" style={{display:'flex',position:'absolute',bottom:'-100%',height:'100%',width:'100%'}}>
+                <div><FacebookIcon /></div>
+                <div><InstagramIcon /></div>
+                <div><WhatsAppIcon /></div>
+                <div><TwitterIcon /></div>
+            </div>
         </Menu2>
       </Drawer>
     </>
