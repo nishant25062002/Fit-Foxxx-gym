@@ -15,18 +15,15 @@ function Blog1() {
                         <div className="content col-md-8 col-sm-12 col-xs-12">
                             <div className="section-block">
                                 <div className="funding-meta">
-                                    <h1>LAUNCH INTO SUCCESS</h1>
+                                    <h1>WEIGHT LOSS</h1>
                                     <span className="type-meta">
                                         <PersonIcon /> Sanskaar Tijaria </span>
                                     <span className="type-meta">
                                         <LanguageIcon />
                                         <a href="https://fitboxxgym.in">fitboxxgym.in</a>, <a href="https://creamchoice.in">creamchoice.in</a> </span>
                                     {/* <!--img src="assets/img/image-heartbeat.jpg" className="img-responsive" alt="launch HTML5 Crowdfunding"--> */}
-                                    <div className="video-frame">
-                                        {/* <iframe src="https://player.vimeo.com/video/67938315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> */}
-                                        {/* <img src="./Images/Excercise.jpg" alt="img" /> */}
-                                    </div>
-                                    <p>Launch will enable you be in run  your own crowdfunding campaign, and be in complete control from concept to crowdfunding to launch.</p>
+                                   
+                                    {/* <p>Launch will enable you be in run  your own crowdfunding campaign, and be in complete control from concept to crowdfunding to launch.</p> */}
                                     {/* <h2>$10,350</h2> */}
                                     {/* <span className="contribution">raised by <strong>5,234</strong> ready to launch</span> */}
                                     {/* <div className="progress">
@@ -40,31 +37,17 @@ function Blog1() {
                                 <a href="#" className="btn btn-launch">HELP LAUNCH</a> */}
                             </div>
                             {/* <!--signup--> */}
-                            <div className="section-block signup">
-                                <div className="sign-up-form">
-                                    <form>
-                                        <p>Sign up now for updates and a chance to win a free version of launch!</p>
-                                        <input className="signup-input" type="text" name="email" placeholder="Email Address" />
-                                        <button className="btn btn-signup" type="submit"  style={{padding:0}}>
-                                            {/* style={{display:"flex"}} */}
-                                            <div style={{display:"flex",width:"100%",alignItems:'center', justifyContent:'center',color:'#187799', }}>
-                                            <TelegramIcon style={{ fontSize: "30px" }} />
-
-                                            </div>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
+                           
                             {/* <!--/signup--> */}
                             {/* <!--tabs--> */}
-                            <div className="section-block">
+                            {/* <div className="section-block">
                                 <div className="section-tabs">
                                     <ul className="nav nav-tabs" role="tablist">
                                         <li role="presentation" className="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
                                         <li role="presentation"><a href="#updates" aria-controls="updates" role="tab" data-toggle="tab">Updates</a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* <!--/tabs-->
 					<!--tab panes--> */}
                             <div className="section-block">
@@ -175,13 +158,13 @@ function Blog1() {
                         {/* <!--/tabs-->
 				<!--/main content-->
 				<!--sidebar--> */}
-                        <div className="content col-md-4 col-sm-12 col-xs-12">
+                        {/* < className="content col-md-4 col-sm-12 col-xs-12">
                             <div className="section-block summary">
                                 <h1 className="section-title">LAUNCH</h1>
                                 <div className="profile-contents">
                                     <h2 className="position">Sky Rocketing Your Funding Campaign</h2>
                                     <img src="assets/img/profile-img.jpg" className="profile-image img responsive" alt="John Doe" />
-                                    {/* <!--social links--> */}
+                                    {
                                     <ul className="list-inline">
                                         <li><a href="#"><i className="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
@@ -189,13 +172,13 @@ function Blog1() {
                                         <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i className="fa fa-git"></i></a></li>
                                     </ul>
-                                    {/* <!--/social links--> */}
+                                  
                                     <a href="#" className="btn btn-contact"><i className="fa fa-envelope"></i>CONTACT US</a>
                                 </div>
-                            </div>
-                            <div className="section-block">
+                            </div> */}
+                            {/* <div className="section-block">
                                 <h1 className="section-title">REWARDS</h1>
-                                {/* <!--reward blocks--> */}
+                              
                                 <div className="reward-block">
                                     <h3>$10</h3>
                                     <h2>Early Bird</h2>
@@ -223,13 +206,13 @@ function Blog1() {
                                     <p>Curabitur accumsan sem sed velit ultrices fermentum. Pellentesque rutrum mi nec ipsum elementum aliquet. Sed id vestibulum eros. Nullam nunc velit, viverra sed consequat ac, pulvinar in metus.</p>
                                     <span><i className="fa fa-users"></i> 64 backers</span>
                                     <a href="" className="btn btn-reward">GET THIS REWARD</a>
-                                </div>
+                                </div> */}
                                 {/* <!--/reward blocks--> */}
                             </div>
                             {/* <!--credits--> */}
-                            <div className="section-block">
+                            {/* <div className="section-block">
                                 <h1 className="section-title">CREDITS</h1>
-                                {/* <!--credits block--> */}
+                               
                                 <div className="credit-block sources">
                                     <ul className="list-unstyled">
                                         <li><a href="http://getbootstrap.com/"><i className="fa fa-external-link"></i>Bootstrap</a></li>
@@ -246,13 +229,13 @@ function Blog1() {
                                     <a href="http://twitter.com/audaindesigns" className="btn btn-follow"><i className="fa fa-twitter"></i>FOLLOW US</a>
                                     <a href="#" className="btn btn-download"><i className="fa fa-download"></i>DOWNLOAD TEMPLATE</a>
                                 </div>
-                                {/* <!--/credits block--> */}
-                            </div>
+                             
+                            </div> */}
                             {/* <!--/credits--> */}
                         </div>
                         {/* <!--/sidebar--> */}
-                    </div>
-                </div>
+               
+                
             </div>
         </Container>
     )
@@ -718,3 +701,4 @@ a {
 .btn, input{
 	outline:none;
 }`
+ 

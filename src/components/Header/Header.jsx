@@ -34,13 +34,14 @@ function Header() {
                 </div>
             </div>
             <div className="Header_socialApp">
-                <div><FacebookIcon /></div>
-                <div><InstagramIcon /></div>
+                <div><a href="https://m.facebook.com/profile.php?id=237598579905306&paipv=0"><FacebookIcon /></a></div>
+                <div><a href="https://www.instagram.com/fitboxxgym/?hl=en"><InstagramIcon /></a></div>
                 <div><WhatsAppIcon /></div>
                 <div><TwitterIcon /></div>
             </div>
         </div>
     )
+  
 }
 
 export default Header

@@ -7,9 +7,12 @@ import { useNavigate } from 'react-router-dom';
 import 'react-modern-drawer/dist/index.css'
 
 const Menu2 = styled.div`
-  width: 60%;
+  width: 100%;
   margin-left: 280px;
   margin-bottom: 50px;
+  background: #0B0B0B;
+ 
+  
 
 
   ul li {
@@ -19,13 +22,14 @@ const Menu2 = styled.div`
     margin-left:25px;
     font-family: "Roboto";
     font-style: normal;
+    color:white;
   }
   @media (max-width: 768px) {
     // display:none;
     margin: 0;
     position: fixed;
     z-index: 999;
-    background: white;
+    background: #0B0B0B;
     transition: 0.3s;
     
     ul {
@@ -36,6 +40,8 @@ const Menu2 = styled.div`
       margin-left: 40px;
       margin-top: 30px;
       padding: 0;
+      
+      color:white;
       list-style:none
     }
     li {

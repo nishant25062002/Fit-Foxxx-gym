@@ -77,6 +77,7 @@
 	list-style: none;
 }
 
+
 .footer__widget ul li a {
 	font-size: 16px;
 	color: #9B9EA3;
@@ -89,7 +90,10 @@
 	color: #9B9EA3;
 	line-height: 37px;
 }
-
+.address__text{
+	display: inline;
+	text-align: start;
+}
 .footer__widget .footer-address li i {
 	margin-right: 8px;
 }

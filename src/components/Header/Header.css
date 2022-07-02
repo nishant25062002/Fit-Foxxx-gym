@@ -96,6 +96,10 @@
     display: none;
    
 }
+.blablabla{
+    background: #131312 !important;
+
+}
 @media(max-width:769px) {
     .right-icons{
         display: flex;
@@ -141,6 +145,10 @@
         margin-left: -3px;
        
     }
+    .Fitboxx_logo img{
+        margin-bottom: 15px;
+    }
+  
    
     
 }

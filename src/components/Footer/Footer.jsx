@@ -3,6 +3,9 @@ import './Footer.css';
 import styled from 'styled-components';
 import '../CSS/bootstrap.css';
 import TelegramIcon from '@mui/icons-material/Telegram';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import HomeIcon from '@mui/icons-material/Home';
 
 function Footer() {
   return (
@@ -59,9 +62,9 @@ function Footer() {
                     <div class="footer__widget">
                         <h5>Contact Us</h5>
                         <ul class="footer-address">
-                            <li> 99972 81881</li>
-                            <li>fitboxxgym@gmail.com</li>
-                            <li>526,yash plaza 1st floor kanwali road vasant vihar, above suvidha mega mart, Dehradun, Uttarakhand 248006</li>
+                         <li>  <PhoneIcon/> 99972 81881</li>
+                          <li>  <EmailIcon/> fitboxxgym@gmail.com</li>
+                           <li>  <HomeIcon/> <p className="address__text">526,yash plaza 1st floor kanwali road vasant vihar, above suvidha mega mart, Dehradun, Uttarakhand 248006</p></li>
                         </ul>
                     </div>
                 </div>
