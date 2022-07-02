@@ -26,7 +26,7 @@ function Blog2() {
                   {/* <!--img src="assets/img/image-heartbeat.jpg" className="img-responsive" alt="launch HTML5 Crowdfunding"--> */}
                   <div className="video-frame">
                     {/* <iframe src="https://player.vimeo.com/video/67938315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> */}
-                    <img src="./Images/h1.jpg" alt="img" />
+                    <img src="./Images/h4.jpg" alt="img" />
                   </div>
                
                   {/* <h2>$10,350</h2> */}
@@ -93,20 +93,20 @@ function Blog2() {
                         have a good in depth knowledge of the fields and can
                         provide with the right guidance.
                         <h6>
-                          1) Proper diet - The salt intake can be reduced and
+                          1)<b>Proper diet </b> - The salt intake can be reduced and
                           the fruits and vegetables must be added in the diet.
                         </h6>
                         <h6>
-                          2)Regular physical exercise - Daily physical exercises
+                          <b>2)Regular physical exercise </b> - Daily physical exercises
                           are must to reduce the hypertension.
                         </h6>
                         <h6>
-                          3)Avoiding intake of harmful things - The consumption
+                         <b> 3)Avoiding intake of harmful things </b>- The consumption
                           of the things like tobacco and alcohol must be taken
                           into check .
                         </h6>
                         <h6>
-                          4) Maintaining the weight or obesity - Being
+                         <b> 4) Maintaining the weight or obesity </b> - Being
                           overweight or obese is one the the major causes of the
                           hypertension and if you fall in the category, then the
                           weight must be taken into check. People who are under
