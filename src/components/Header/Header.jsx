@@ -25,13 +25,17 @@ function Header() {
                     Courses
                 </div>
 
-                <div onClick={() => { navigate('/blog'); setPathName('/blog') }} className={pathName == '/blog' ? 'activeTab' : ''}>
-                    Weight Gain
+                <div onClick={() => { navigate('/blogs'); setPathName('/blogs') }} className={pathName == '/blogs' ? 'activeTab' : ''}>
+                    Blogs
                 </div>
 
-                <div onClick={() => { navigate('/blog2'); setPathName('/blog2') }} className={pathName == '/blog' ? 'activeTab' : ''}>
+                {/* <div onClick={() => { navigate('/blog'); setPathName('/blog') }} className={pathName == '/blog' ? 'activeTab' : ''}>
+                    Weight Gain
+                </div> */}
+
+                {/* <div onClick={() => { navigate('/blog2'); setPathName('/blog2') }} className={pathName == '/blog' ? 'activeTab' : ''}>
                    Hypertension
-                </div>
+                </div> */}
 
                 <div onClick={() => { navigate('/contact'); setPathName('/contact') }} className={pathName == '/contact' ? 'activeTab' : ''} >
                     Contact
@@ -40,7 +44,7 @@ function Header() {
             <div className="Header_socialApp">
                 <div><a href="https://m.facebook.com/profile.php?id=237598579905306&paipv=0"><FacebookIcon /></a></div>
                 <div><a href="https://www.instagram.com/fitboxxgym/?hl=en"><InstagramIcon /></a></div>
-                <div><WhatsAppIcon /></div>
+                <div><a href="whatsapp://send?phone=+91-9997281881"><WhatsAppIcon /></a></div>
                 <div><TwitterIcon /></div>
             </div>
         </div>

@@ -11,58 +11,68 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import HeadLine from '../GlobalComponents/HeadLine';
 
 const Menu2 = styled.div`
+height: 100vh;
   width: 100%;
-  margin-left: 280px;
-  margin-bottom: 50px;
-  background: #0B0B0B;
- 
-  
-
-
+  /* margin-left: 280px;
+  margin-bottom: 50px; */
+  span{
+    display: flex;
+    align-items: baseline;
+    padding: 10px 9px 6px 9px;
+    font-size: 21px;
+    color: white;
+  }
   ul li {
     font-weight: 400;
     font-size: 18px;
-    margin: 13.75px;
-    margin-left:25px;
+    /* margin: 13.75px; */
+    /* margin-left:25px; */
     font-family: "Roboto";
     font-style: normal;
     color:white;
   }
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) { */
     // display:none;
     margin: 0;
     position: fixed;
     z-index: 999;
-    background: #0B0B0B;
     transition: 0.3s;
     
     ul {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: baseline;
-      margin-left: 40px;
-      margin-top: 30px;
+      /* align-items: baseline; */
+      /* margin-left: 40px;
+      margin-top: 30px; */
       padding: 0;
-      
       color:white;
       list-style:none
     }
     li {
       border: none;
-      margin-left: 0 !important;
-      margin-bottom: 15px !important;
+      /* margin-left: 0 !important;
+      margin-bottom: 15px !important; */
+      padding: 12px;
       border-right-style: hidden;
-      padding: 0;
-      border-right-style: hidden !important;
-      color:black;
+      border-bottom: 1px solid gray;
+      width: 100%;
+      padding-left: 35px;
     }
     a {
       margin: 0;
     }
-  }
+    h6{
+    margin: 0 11px;
+    font-size: 12px;
+    /* text-align:center; */
+    font-weight: 600;
+    color: gray;
+   }
+  /* } */
 `;
 
 function Head() {
@@ -81,34 +91,34 @@ function Head() {
           {/* Fit Boxxx */}
         </div>
         <div className="Head2">
-        <div className="mb-phone">
-          <a href="tel:+91-89823799712"><img className="phone-m" src="./Images/phone.png" alt="" /></a>
-         </div>
-         <div style={{display:'flex',justifyContent:'center',alignItems:"center"}} className="">
-         <a  style={{display:'flex',justifyContent:'center',alignItems:"center"}} href="whatsapp://send?phone=+91-89823799712">
-          {/* <img className="mb-whatsapp" src="./Images/whatsapp.png"> */}
-            {/* </img> */}
-            <WhatsappRoundedIcon style={{fontSize:"27px", color: '#25D366',fontWeight:'700'}} className="mb-whatsapp"/>
+          <div className="mb-phone">
+            <a href="tel:+91-9997281881"><img className="phone-m" src="./Images/phone.png" alt="" /></a>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }} className="">
+            <a style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }} href="whatsapp://send?phone=+91-9997281881">
+              {/* <img className="mb-whatsapp" src="./Images/whatsapp.png"> */}
+              {/* </img> */}
+              <WhatsappRoundedIcon style={{ fontSize: "27px", color: '#25D366', fontWeight: '700' }} className="mb-whatsapp" />
             </a>
 
-         </div>
-         <div className="conn" onClick={toggleDrawer}>
-          <MenuRoundedIcon fontSize='large'/>
-          {/* <a href="#" class="hidden"></a>
+          </div>
+          <div className="conn" onClick={toggleDrawer}>
+            <MenuRoundedIcon fontSize='large' />
+            {/* <a href="#" class="hidden"></a>
           <a href="#" class="hidden"></a>
           <a href="#" class="hidden"></a> */}
 
-        </div>
-          <div className="Head2_div">
-            Contact Number: 89823799712
           </div>
-        
+          <div className="Head2_div">
+            Contact Number: 9997281881
+          </div>
+
           <button>
             Join Us
           </button>
         </div>
-      
-       
+
+
       </div>
 
       <Drawer
@@ -117,9 +127,18 @@ function Head() {
         direction="right"
         className="blablabla"
       >
-        <Menu2 className="Menu">
-          <ul>
-            <li>
+        <Menu2>
+          <div style={{height:"20vh"}}>
+          <span>
+            Fitboxx gym
+            <div className="border_head"></div>
+          </span>
+          <h6>
+            {"Since 1969"}
+          </h6>
+          </div>
+          <ul style={{height:"30vh"}}>
+            <li style={{ borderTop: '1px solid gray' }}>
               <div onClick={() => { navigate('/'); setPathName('/') }} className={pathName == '/' ? 'activeTab' : ''}>
                 Home
               </div>
@@ -147,17 +166,17 @@ function Head() {
 
 
           </ul>
-         
-          <div className="Header_socialApp" style={{display:'flex',bottom:'-100%',height:'100%',width:'100%'}}>
-                <div style={{height:'0px'}}><FacebookIcon /></div>
-                <div style={{height:'0px'}}><InstagramIcon /></div>
-                <div style={{height:'0px'}}><WhatsAppIcon /></div>
-                <div style={{height:'0px'}}><TwitterIcon /></div>
-            </div>
 
-            <div className="Fitboxx_logo">
+          <div className="Fitboxx_logo">
             <img src="./Images/Fitboxx_Logo.jpeg" alt="" />
+            <div className="Header_socialApp" style={{ display: 'flex', width: '100%' }}>
+              <div ><FacebookIcon /></div>
+              <div ><InstagramIcon /></div>
+              <div ><WhatsAppIcon /></div>
+              <div ><TwitterIcon /></div>
+            </div>
           </div>
+
         </Menu2>
       </Drawer>
     </>

@@ -42,7 +42,7 @@ function Appointment() {
             </div>
         </div>
     </section> */}
-    <div className="Map">
+    <div className="Map_address">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.901081022395!2d78.00216781512174!3d30.32533138178094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092a113bdb39a5%3A0xa13d0417c44b5154!2sFitboxx%20Gym!5e0!3m2!1sen!2sin!4v1656407840580!5m2!1sen!2sin" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div>

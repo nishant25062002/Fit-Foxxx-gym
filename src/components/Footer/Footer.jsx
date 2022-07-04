@@ -12,7 +12,7 @@ function Footer() {
    
  
     <Section>
-        <section class="footer">
+        <section class="footer_sec">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
@@ -41,7 +41,7 @@ function Footer() {
                             <li><a href="#">Zumba Classes</a></li>
                             <li><a href="#">Muscle Training</a></li>
                             <li><a href="#">PCOD &amp; PCOS</a></li>
-                            <li><a href="#">Diabetic </a></li>
+                            <li><a href="#">Diabetes </a></li>
                         </ul>
                     </div>
                 </div>
@@ -99,9 +99,8 @@ function Footer() {
 
 export default Footer
 
-const Wrapper=styled.div``
 const Section = styled.div`
-.footer {
+.footer_sec {
   background: $heading-color;
   padding-top: 70px;
 }

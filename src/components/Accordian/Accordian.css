@@ -1,17 +1,21 @@
 .contain {
-    width: 900px;
+    /* width: 900px; */
+    width: 100%;
+    max-width: 1300px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.map{
-    width:1000px;
+
+.map {
+    width: 1000px;
     height: 600px;
     border: 0;
-    
-    
-     
-    
 }
-.map-contain{
+
+.map-contain {
     text-align: center;
     margin: 40px;
 }
@@ -21,44 +25,68 @@
     text-align: center;
     padding-bottom: 30px;
     padding-top: 32px;
-    color:#fbb034
+    color: #fbb034
 }
-.mb-map{
+
+.mb-map {
     display: none;
 }
 
+.questionCSS {
+    font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 16px !important;
+        color: #464343;
+}
+.css-1lu7ab6-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+    margin: 0 !important;
+}
+.css-954f0r-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+    margin: 0   !important;
+}
 @media screen and (max-width: 750px) {
-    .map{
+    .questionCSS {
+        font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 12px !important;
+            color: #464343;
+    }
+    .map {
         display: none;
 
     }
-    .mb-map{
+
+    .mb-map {
         display: block;
         width: 90%;
         text-align: center;
         margin: auto;
     }
-    .mb-map .map-mb{
+
+    .mb-map .map-mb {
         width: 100%;
     }
-    .contain {
+
+    /* .contain {
         width: 420px;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
-    }
+    } */
+
     .contain>h1 {
         font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 27px;
-    color: #464343;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: #464343;
         padding: 0;
         margin-top: 16px;
     }
-    .contain h1{
+
+    .contain h1 {
         width: 100vw;
         font-size: 20px;
         color: #fbb034;

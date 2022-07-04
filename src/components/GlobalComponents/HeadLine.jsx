@@ -23,7 +23,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-margin:24px 0;
+margin:48px 0 24px 0;
 div{
    display: flex;
    align-items: baseline;
@@ -48,7 +48,8 @@ p{
     color: gray;
    }
    @media screen and (max-width: 760px){
-    margin:14px 0;
+    /* margin:14px 0; */
+    margin:38px 0 14px 0;
     span{
     margin:7px !important;
     font-size: 23px;

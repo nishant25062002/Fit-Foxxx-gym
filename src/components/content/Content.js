@@ -5,20 +5,21 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 const Content = () => {
-  useEffect(
+  // useEffect(
 
-    () =>{
+  //   () =>{
 
-      AOS.init({duration: 2000});
-    },
+  //     AOS.init({duration: 2000});
+  //   },
 
-    []
+  //   []
 
 
-  );
+  // );
   return (
     <div className="wrapper">
-      <div data-aos="fade-left" className="content__text">
+      {/* data-aos="fade-left" */}
+      <div  className="content__text">
         <div  className="Head_about">
           Our Methods
           <div className="border_head"></div>

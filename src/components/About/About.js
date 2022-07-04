@@ -2,24 +2,27 @@ import React, { useEffect } from "react";
 import Head from "../Header/Head";
 import "./About.css";
 import AOS from "aos";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
+import Header from "../Header/Header";
+import HeadLine from "../GlobalComponents/HeadLine";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 2000 });
+  // }, []);
+
   return (
     <>
       <Head />
+      <Header />
       <div className="about__container">
-        <h2 style={{ textAlign: "center", marginTop: "10px" }}>
-          About Fitboxx
-        </h2>
+        <HeadLine name={"About Fitboxx"} />
         <div className="about__flex">
-          <div data-aos="fade-left" className="left">
+        {/* data-aos="fade-left" */}
+          <div className="left">
             <img className="left__img" src="./Images/Fb_II.webp"></img>
           </div>
-          <div data-aos="fade-right" className="right">
+          <div className="right">
             <p className="right__text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text

@@ -1,46 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
-.Header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  width: 100%;
-  
-  /* background-color: #00b9ff; */
+
+.Header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    /* background-color: #00b9ff; */
 }
 
-.mb-whatsapp{
+.mb-whatsapp {
     display: none !important;
 }
-.Header_options{
+
+.Header_options {
     display: flex;
     width: 40%;
     justify-content: space-between;
 }
-.Header_options>div{
+
+.Header_options>div {
     font-size: 18px;
     font-weight: 500;
     color: #fbb034;
     cursor: pointer;
 }
-.Header_socialApp{
+
+.Header_socialApp {
     display: flex;
     width: 10%;
     justify-content: space-around;
 }
-.Header_socialApp div:first-child{
-    color: #4267B2; 
+
+.Header_socialApp div:first-child {
+    color: #4267B2;
 }
-.Header_socialApp div:nth-child(2){
-    color:#e1306c;
+
+.Header_socialApp div:nth-child(2) {
+    color: #e1306c;
 }
-.Header_socialApp div:nth-child(3){
+
+.Header_socialApp div:nth-child(3) {
     color: #25D366;
 }
-.Header_socialApp div:last-child{
+
+.Header_socialApp div:last-child {
     color: #00b9ff;
 }
-.Head{
+
+.Head {
+    position: sticky !important;
+    top: 0 !important;
     z-index: 1;
     height: 8vh !important;
     width: 100%;
@@ -51,27 +61,30 @@
     align-items: center;
     margin: 0 !important;
     /* Created with https://www.css-gradient.com */
-/* background: #C5C975; */
-background: #131312;
-/* background: -webkit-linear-gradient(right, #C5C975, #CFBE6B);
+    /* background: #C5C975; */
+    background: #131312;
+    /* background: -webkit-linear-gradient(right, #C5C975, #CFBE6B);
 background: -moz-linear-gradient(right, #C5C975, #CFBE6B);
 background: linear-gradient(to left, #C5C975, #CFBE6B); */
 }
-.Head1{
+
+.Head1 {
     color: rgb(215, 182, 35);
     display: flex;
     width: 30%;
     justify-content: center;
     cursor: pointer;
 }
-.Head2{
+
+.Head2 {
     align-items: center;
     display: flex;
     width: 65%;
     justify-content: flex-end;
     padding-right: 5%;
 }
-.Head2>button{
+
+.Head2>button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,85 +96,126 @@ background: linear-gradient(to left, #C5C975, #CFBE6B); */
     font-weight: bold;
     background-color: #fbb034;
 }
-.Head2_div{
+
+.Head2_div {
 
     margin-right: 45px;
     font-family: 'Poppins';
 
 }
-.Head1 img{
+
+.Head1 img {
     /* width: 90px; */
     height: 45px;
     border-radius: 3px;
     box-shadow: 0 0 15px -4px solid black;
 }
-.activeTab{
+
+.activeTab {
+    display: flex;
+    width: fit-content;
     border-bottom: 2.5px solid #fd9c00;
     padding: 0 6px;
 }
-.phone-m{
- display: none;
-  
-}
-.mb-whatsapp{
+
+.phone-m {
     display: none;
-   
-}
-.Fitboxx_logo img{
-    margin-top: 100px;
-}
-.blablabla{
-    background: #131312 !important;
 
 }
+
+.mb-whatsapp {
+    display: none;
+
+}
+
+.Fitboxx_logo {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: ; */
+}
+
+/* .Fitboxx_logo img { */
+/* margin-top: 100px; */
+/* } */
+
+.blablabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    background: #5F5B15 !important;
+    background: -webkit-linear-gradient(bottom right, #5F5B15, #282727) !important;
+    background: -moz-linear-gradient(bottom right, #5F5B15, #282727) !important;
+    background: linear-gradient(to top left, #5F5B15, #282727) !important;
+
+}
+
 @media(max-width:769px) {
-    .right-icons{
+    .right-icons {
         display: flex;
         align-items: center;
         justify-content: inherit;
     }
-    .Head2_div{
+
+    .Header {
         display: none;
     }
-    .Head button{
+
+    .Head2_div {
         display: none;
     }
-.Header{
-    margin: 0;
-    padding: 0;
-}
-.Header_options{
-    width: 100%;
-}
-    .Header_socialApp{
+
+    .Head button {
         display: none;
     }
-    .Head1{
+
+    .Header {
+        margin: 0;
+        padding: 0;
+    }
+
+    .Header_options {
+        width: 100%;
+    }
+
+    .Header_socialApp {
+        display: none;
+    }
+
+    .Head1 {
         width: 70%;
     }
-    .Head1>img{
+
+    .Head1>img {
         height: 30px;
         margin-left: 15px;
     }
-    .Header_options{
+
+    .Header_options {
         display: none;
     }
-    .phone-m{
+
+    .phone-m {
         height: 40px;
         width: 40px;
         margin-right: 20px;
-      
+
     }
-    .mb-whatsapp{
+
+    .mb-whatsapp {
         display: flex !important;
     }
-    .Head2{
+
+    .Head2 {
         padding-right: 0%;
     }
-    .Fitboxx_logo img{
+
+    .Fitboxx_logo img {
         margin-bottom: 15px;
     }
-  
-   
-    
+
+
+
 }

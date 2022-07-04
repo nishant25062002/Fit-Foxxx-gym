@@ -4,7 +4,7 @@ import Header from '../Header/Header'
 import Head from '../Header/Head';
 import styled from 'styled-components';
 
-function Home({ pathName }) {
+function Home() {
 
     const [showPop, setShowPop] = useState(false)
 
@@ -12,19 +12,14 @@ function Home({ pathName }) {
         <div className='Homee'>
             <img className="desk" src="./Images/banner.jpg" />
             <img className="mb-Homee" src="./Images/Fb_II.webp" />
-            {!pathName && <Head pathName={pathName} />}
-            <Header pathName={pathName} />
+            <Head />
+            <Header />
             <div className="home_body">
                 <h2>FITBOXX GYM</h2>
-                {!pathName &&
-                    <> <h4>Strong People , Stronger Nation</h4>
-                        <button onClick={() => { setShowPop(true) }}>Become a member</button>
-                    </>
-                }
-                {pathName == '' &&
-                    <> <h4>/ Contact Us</h4>
-                    </>
-                }
+
+                <> <h4>Strong People, Stronger Nation</h4>
+                    <button onClick={() => { setShowPop(true) }}>Become a member</button>
+                </>
             </div>
             {showPop &&
                 <Container>
@@ -35,7 +30,7 @@ function Home({ pathName }) {
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <span>
-                                            <p onClick={()=>{setShowPop(false)}}>X</p>
+                                            <p onClick={() => { setShowPop(false) }}>X</p>
                                         </span>
                                         <div className="section-title">
                                             {/* <img src="img/icon-white.png" alt="" /> */}

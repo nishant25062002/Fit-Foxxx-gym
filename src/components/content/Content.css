@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-around;
     margin: 42px;
+    margin-bottom: 0;
     border: 2px solid #fed086;
     padding: 42px 0;
 }
@@ -80,6 +81,7 @@
   .para__text{
     font-size: 15px;
     font-weight: 500;
+    /* word-break: break-all; */
     /* transform: skewX(-4deg); */
   }  
   /* .Conright:hover:before {

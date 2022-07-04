@@ -9,12 +9,14 @@ const Table = ({ day }) => {
         <tr>
           <td>Fitness Class</td>
           <td>
-            <span className={day === "Monday" ? "" : "hidden"}>
+          {/* className={day === "Monday" ? "" : "hidden"} */}
+            <span >
               10:00AM - 11:30AM
             </span>
           </td>
           <td>
-            <span className={day === "Tuesday" ? "" : "hidden"}>
+          {/* className={day === "Tuesday" ? "" : "hidden"} */}
+            <span >
               2:00PM - 3:30PM
             </span>
           </td>
@@ -23,12 +25,14 @@ const Table = ({ day }) => {
         <tr>
           <td>Muscle Training</td>
           <td>
-            <span className={day === "Friday" ? "" : "hidden"}>
+          {/* className={day === "Friday" ? "" : "hidden"} */}
+            <span>
               10:00AM - 11:30AM
             </span>
           </td>
           <td>
-            <span className={day === "Thursday" ? "" : "hidden"}>
+          {/* className={day === "Thursday" ? "" : "hidden"} */}
+            <span>
               2:00PM - 3:30PM
             </span>
           </td>
@@ -37,12 +41,14 @@ const Table = ({ day }) => {
         <tr>
           <td>Body Building </td>
           <td>
-            <span className={day === "Tuesday" ? "" : "hidden"}>
+          {/* className={day === "Tuesday" ? "" : "hidden"} */}
+            <span>
               10:00AM - 11:30AM
             </span>
           </td>
           <td>
-            <span className={day === "Monday" ? "" : "hidden"}>
+          {/* className={day === "Monday" ? "" : "hidden"} */}
+            <span >
               2:00PM - 3:30PM
             </span>
           </td>
@@ -51,12 +57,12 @@ const Table = ({ day }) => {
         <tr>
           <td>Yoga Training Class </td>
           <td>
-            <span className={day === "Wednesday" ? "" : "hidden"}>
+            <span >
               10:00AM - 11:30AM
             </span>
           </td>
           <td>
-            <span className={day === "Friday" ? "" : "hidden"}>
+            <span >
               2:00PM - 3:30PM
             </span>
           </td>
@@ -65,12 +71,12 @@ const Table = ({ day }) => {
         <tr>
           <td>Advanced Training </td>
           <td>
-            <span className={day === "Thursday" ? "" : "hidden"}>
+            <span>
               10:00AM - 11:30AM
             </span>
           </td>
           <td>
-            <span className={day === "Wednesday" ? "" : "hidden"}>
+            <span >
               2:00PM - 3:30PM
             </span>
           </td>
