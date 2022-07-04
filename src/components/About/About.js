@@ -37,7 +37,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="owner__container">
+        {/* <div className="owner__container">
           <div className="owner__left">
           <img className="left__img" src="./Images/Fb_II.webp"></img>
           </div>
@@ -55,7 +55,7 @@ const About = () => {
               Lorem Ipsum.</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

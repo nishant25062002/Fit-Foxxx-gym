@@ -18,14 +18,18 @@
     text-align: center;
 
 }
+.right{
+    margin-right: 2rem;
+}
 .left__img{
     width: 60%;
     height: auto;
 }
 .right__text{
     width: 90%;
-    flex-wrap: wrap;
+   
     margin: auto;
+    text-align: justify;
 }
 .owner__container{
  
@@ -48,6 +52,12 @@
     .owner__container{
 
         flex-direction: column;
+    }
+    .left{
+        margin-bottom: 2rem;
+    }
+    .right{
+        margin-right: 0;
     }
     
 
