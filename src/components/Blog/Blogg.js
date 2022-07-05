@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from '../Header/Head'
-import './Blog.css'
 import Blog2 from './Blog2'
 
 const Blogg = () => {

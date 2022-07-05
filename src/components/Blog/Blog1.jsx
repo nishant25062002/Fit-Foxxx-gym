@@ -1,5 +1,4 @@
 import React from 'react';
-// import './BlogTemp.css'
 import styled from 'styled-components';
 import PersonIcon from '@mui/icons-material/Person';
 import LanguageIcon from '@mui/icons-material/Language';
@@ -322,8 +321,8 @@ a {
 .section-block {
 	background-color: #F7F7F7;
 	border-radius:4px;
-	padding: 30px;
-	margin-bottom:30px;
+	/* padding: 30px; */
+	/* margin-bottom:30px; */
 }
 .section-block.summary {
     background-color: #99DEAB;
@@ -353,7 +352,7 @@ a {
 
 /*-Main Content-*/
 .main-content {
-	padding:40px 0px;
+	/* padding:40px 0px; */
 }
 
 /*-Profile Summary-*/

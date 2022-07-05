@@ -1,212 +1,149 @@
 import React, { useEffect, useState } from 'react';
 // import './BlogTemp.css'
+import './Blog.css'
 import styled from 'styled-components';
 import PersonIcon from '@mui/icons-material/Person';
 import LanguageIcon from '@mui/icons-material/Language';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import { db } from '../../firebase';
+import HeadLine from '../GlobalComponents/HeadLine';
+import Head from '../Header/Head';
 
 function BlogTemp() {
-    const [data,setData]= useState([])
-    useEffect(() => {
-      db.collection("Blog").doc('Diabetes').onSnapshot((doc) => {
-        setData(doc.data())
-        console.log("data",doc.data())
-        // dispatch({
-        //     type: actionTypes.SET_REGISTERED_SCHOOL,
-        //     registeredSch: doc.data()?.Schools,
-        // })
-    }
-    );
-    }, [])
-    
-    return (
-        <Container>
-            <div className="main-content">
-                <div className="container">
-                    <div className="row">
-                        <div className="content col-md-8 col-sm-12 col-xs-12">
-                            <div className="section-block">
-                                <div className="funding-meta">
-                                    <h1>WEIGHT LOSS</h1>
-                                    <span className="type-meta">
-                                        <PersonIcon /> Sanskaar Tijaria </span>
-                                    <span className="type-meta">
-                                        <LanguageIcon />
-                                        <a href="https://fitboxxgym.in">fitboxxgym.in</a>, <a href="https://creamchoice.in">creamchoice.in</a> </span>
-                                    {/* <!--img src="assets/img/image-heartbeat.jpg" className="img-responsive" alt="launch HTML5 Crowdfunding"--> */}
-                                   
-                                    {/* <p>Launch will enable you be in run  your own crowdfunding campaign, and be in complete control from concept to crowdfunding to launch.</p> */}
-                                    {/* <h2>$10,350</h2> */}
-                                    {/* <span className="contribution">raised by <strong>5,234</strong> ready to launch</span> */}
-                                    {/* <div className="progress">
-                                        <div className="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style={{ width: "45%" }}>
-                                            <span className="sr-only">45% Complete</span>
-                                        </div>
-                                    </div> */}
-                                    {/* <span className="goal-progress"><strong>45%</strong> of $23,000 raised</span> */}
-                                </div>
-                                {/* <span className="count-down"><strong>27</strong>Days to go.</span>
-                                <a href="#" className="btn btn-launch">HELP LAUNCH</a> */}
-                            </div>
-                            {/* <!--signup--> */}
-                           
-                            {/* <!--/signup--> */}
-                            {/* <!--tabs--> */}
-                            {/* <div className="section-block">
-                                <div className="section-tabs">
-                                    <ul className="nav nav-tabs" role="tablist">
-                                        <li role="presentation" className="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
-                                        <li role="presentation"><a href="#updates" aria-controls="updates" role="tab" data-toggle="tab">Updates</a></li>
-                                    </ul>
-                                </div>
-                            </div> */}
-                            {/* <!--/tabs-->
-					<!--tab panes--> */}
-                            <div className="section-block">
-                                <div className="tab-content">
-                                    <div role="tabpanel" className="tab-pane active" id="about">
-                                        <div className="about-information">
-											<div className="">
-												<img src="./Images/Obesity.jpg" alt=""></img>
-											</div>
-                                            <h1 className="section-title">{data?.H}</h1>
-                                            <p>{data?.D}
-                                                <h1 className="section-title"> WHAT CAUSES OBESITY</h1>
+	const [data, setData] = useState([])
+	useEffect(() => {
+		db.collection("Blog").doc('Weight Loss').onSnapshot((doc) => {
+			setData(doc.data())
+			console.log("data", doc.data())
+			// dispatch({
+			//     type: actionTypes.SET_REGISTERED_SCHOOL,
+			//     registeredSch: doc.data()?.Schools,
+			// })
+		}
+		);
+	}, [])
 
-                                                There are many factors that may contribute to the obesity, and more importantly these factors have come into light even more in today's lifestyles.
+	return (
+		<>
+			<Head />
+			<Container>
+				<div className="main-content">
+					<div className="container">
+						<div className="row">
+							<div className="content col-md-8 col-sm-12 col-xs-12">
+								<div className="section-block">
+									<div className="funding-meta">
+										<div className="Head_about">
+											{data?.Name}
+											<div className="border_head"></div>
+										</div>
+										<span className="type-meta">
+											<PersonIcon /> {data?.WB} </span>
+										<span className="type-meta">
+											<LanguageIcon />
+											<a href="https://fitboxxgym.in">fitboxxgym.in</a>, <a href="https://creamchoice.in">creamchoice.in</a> </span>
+									</div>
+								</div>
 
-                                                The fast foods in today's world are a major factor of obesity. These foods are low in fiber and have high sugar content and hence allow us to intake a lot of calories.
-
-                                                Lack of physical work and increased screen timings have also majorly contributed to the global issue of obesity.
-
-                                                Overeating due to loneliness, anxiety in today's fast and ever changing world is another common thing that is affecting the world in a negative way.
-
-
+								<div className="section-block">
+									<div className="tab-content">
+										<div role="tabpanel" className="tab-pane active" id="about">
+											<div className="about-information">
 												<div className="">
-												<img src="./Images/Hypertension.jpg" alt=""></img>
+													<img src={data?.MI} alt=""></img>
+												</div>
+												<h1 className="section-title" style={{ color: 'black' }}>{data?.H}</h1>
+												<p>{data?.D}
+													<h1 className="section-title"> {data?.CH}</h1>
+													{data?.CD}
+													<div className="">
+														<img src={data?.CI} alt=""></img>
+													</div>
+													<h4 style={{ color: 'black', marginTop: "8px" }}>{data?.MH}</h4>
+													{data?.MD}
+													{data?.MT && 
+														data?.MT.map((data, k) => (
+															<>
+																<h3 style={{ color: 'black', marginTop: "8px" }}>{k + 1 + ")"} {data?.H}</h3>
+																<div className="">
+																	<img src={data?.I} alt=""></img>
+																</div>
+																{data?.D}
+															</>
+														))
+													}
+												</p>
 											</div>
-
-                                                WEIGHT LOSS AS IMPORTANT STEP IN TODAY'S WORLD
-
-                                                There are many health risks of overweight and obesity.
-                                                Accumulation of weight above average may lead to high blood pressure, heart diseases, stroke, metabolic syndrome,  liver diseases,  osteoarthritis etc
-                                                People can lose weight and maintain the loss by taking several steps
-
-							
-                                                <h3>1) Engaging in regular physical activity and exercise</h3>
-
-												<div className="">
-												<img src="./Images/Physical.png" alt=""></img>
+										</div>
+										<div role="tabpanel" className="tab-pane" id="updates">
+											<div className="update-information">
+												<h1 className="section-title">UPDATES</h1>
+												{/* <!--update items--> */}
+												<div className="update-post">
+													<h4 className="update-title">We've started shipping!</h4>
+													<span className="update-date">Posted 2 days ago</span>
+													<p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
+												</div>
+												<div className="update-post">
+													<h4 className="update-title">Launch begins manufacturing </h4>
+													<span className="update-date">Posted 9 days ago</span>
+													<p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
+												</div>
+												<div className="update-post">
+													<h4 className="update-title">Designs have now been finalized</h4>
+													<span className="update-date">Posted 17 days ago</span>
+													<p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
+												</div>
+												{/* <!--/update items--> */}
 											</div>
-
-
-                                                This is the kind of the step which will ask you for your discipline,  perseverance and dedication.  Engaging in the regular physical exercises and going to the Gym have really helped people worldwide to get the rid of the overweightness. Gym can really help you lose weight, but only if you are ready to push yourself and ready to sacrifice many things.
-                                                Gyms usually have trainers who have a good in depth knowledge of the fields and can provide with the right guidance.
-
-											
-                                                <h3> 2)Proper and healthy diet</h3>
-
-												<div className="">
-												<img src="./Images/Healthy_Food (1).jpg" alt=""></img>
-											</div>
-
-                                                Exclusion of the junk food and inclusion of healthful meals and snacks with fruits and vegetables and proteins should form the base of your diet.
-                                                Baked things, oily things,  fatty meats, extra sugary things must be avoided.
-                                                Moreover, if you have joined a gym, the proper diet chart can be provided to you as well.
-
-											
-                                                <h3>3) Engage socially</h3>
-
-												<div className="">
-												<img src="./Images/Social.jpg" alt=""></img>
-											</div>
-
-                                                As discussed above, loneliness and overeating can easily be connected. Hence it is very much necessary to embrace the support of loved ones. One must have a positive social network, exercise clubs or partners.
-
-                                                <h3>4) Managing stress levels</h3>
-
-
-												<div className="">
-												<img src="./Images/Stress.jpg" alt=""></img>
-											</div>
-
-                                                People who are under constant stress have witnessed a increase in their appetite.
-                                                The management of the stress can be done by yoga, meditation,  breathing and relaxing techniques and spending time outdoors with your loved and caring ones.
-
-                                                One must remember at last that our body will be with us throughout our life and it must be our responsibility to take the proper care of the body as well as the health to live a fruitful life.
-                                                When it comes to weight loss, it will never be easy at the start and will demand out of the skin hard work from your side,  only to give the benefits in the long run.</p>
-                                              </div>
-                                    </div>
-                                    <div role="tabpanel" className="tab-pane" id="updates">
-                                        <div className="update-information">
-                                            <h1 className="section-title">UPDATES</h1>
-                                            {/* <!--update items--> */}
-                                            <div className="update-post">
-                                                <h4 className="update-title">We've started shipping!</h4>
-                                                <span className="update-date">Posted 2 days ago</span>
-                                                <p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
-                                            </div>
-                                            <div className="update-post">
-                                                <h4 className="update-title">Launch begins manufacturing </h4>
-                                                <span className="update-date">Posted 9 days ago</span>
-                                                <p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
-                                            </div>
-                                            <div className="update-post">
-                                                <h4 className="update-title">Designs have now been finalized</h4>
-                                                <span className="update-date">Posted 17 days ago</span>
-                                                <p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
-                                            </div>
-                                            {/* <!--/update items--> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!--/tabs-->
+										</div>
+									</div>
+								</div>
+							</div>
+							{/* <!--/tabs-->
 				<!--/main content-->
 				<!--sidebar--> */}
-                        {/* < className="content col-md-4 col-sm-12 col-xs-12">
+							{/* < className="content col-md-4 col-sm-12 col-xs-12">
                             <div className="section-block summary">
-                                <h1 className="section-title">LAUNCH</h1>
-                                <div className="profile-contents">
-                                    <h2 className="position">Sky Rocketing Your Funding Campaign</h2>
-                                    <img src="assets/img/profile-img.jpg" className="profile-image img responsive" alt="John Doe" />
-                                    {
-                                    <ul className="list-inline">
-                                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                                        <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i className="fa fa-git"></i></a></li>
-                                    </ul>
-                                  
-                                    <a href="#" className="btn btn-contact"><i className="fa fa-envelope"></i>CONTACT US</a>
+							<h1 className="section-title">LAUNCH</h1>
+							<div className="profile-contents">
+							<h2 className="position">Sky Rocketing Your Funding Campaign</h2>
+							<img src="assets/img/profile-img.jpg" className="profile-image img responsive" alt="John Doe" />
+							{
+								<ul className="list-inline">
+								<li><a href="#"><i className="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i className="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i className="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i className="fa fa-git"></i></a></li>
+								</ul>
+								
+								<a href="#" className="btn btn-contact"><i className="fa fa-envelope"></i>CONTACT US</a>
                                 </div>
                             </div> */}
-                            {/* <div className="section-block">
+							{/* <div className="section-block">
                                 <h1 className="section-title">REWARDS</h1>
                               
                                 <div className="reward-block">
-                                    <h3>$10</h3>
-                                    <h2>Early Bird</h2>
-                                    <p>Curabitur accumsan sem sed velit ultrices fermentum. Pellentesque rutrum mi nec ipsum elementum aliquet. Sed id vestibulum eros. Nullam nunc velit, viverra sed consequat ac, pulvinar in metus.</p>
-                                    <span><i className="fa fa-users"></i> 180 backers</span>
-                                    <a href="" className="btn btn-reward">GET THIS REWARD</a>
+								<h3>$10</h3>
+								<h2>Early Bird</h2>
+								<p>Curabitur accumsan sem sed velit ultrices fermentum. Pellentesque rutrum mi nec ipsum elementum aliquet. Sed id vestibulum eros. Nullam nunc velit, viverra sed consequat ac, pulvinar in metus.</p>
+								<span><i className="fa fa-users"></i> 180 backers</span>
+								<a href="" className="btn btn-reward">GET THIS REWARD</a>
                                 </div>
                                 <div className="reward-block popular">
-                                    <h3>$20</h3>
-                                    <h2>Value Bird</h2>
-                                    <p>Curabitur accumsan sem sed velit ultrices fermentum. Pellentesque rutrum mi nec ipsum elementum aliquet. Sed id vestibulum eros. Nullam nunc velit, viverra sed consequat ac, pulvinar in metus.</p>
-                                    <span><i className="fa fa-users"></i> 320 backers</span>
-                                    <a href="" className="btn btn-reward">GET THIS REWARD</a>
+								<h3>$20</h3>
+								<h2>Value Bird</h2>
+								<p>Curabitur accumsan sem sed velit ultrices fermentum. Pellentesque rutrum mi nec ipsum elementum aliquet. Sed id vestibulum eros. Nullam nunc velit, viverra sed consequat ac, pulvinar in metus.</p>
+								<span><i className="fa fa-users"></i> 320 backers</span>
+								<a href="" className="btn btn-reward">GET THIS REWARD</a>
                                 </div>
                                 <div className="reward-block">
-                                    <h3>$30</h3>
-                                    <h2>Super Bird</h2>
-                                    <p>Curabitur accumsan sem sed velit ultrices fermentum. Pellentesque rutrum mi nec ipsum elementum aliquet. Sed id vestibulum eros. Nullam nunc velit, viverra sed consequat ac, pulvinar in metus.</p>
-                                    <span><i className="fa fa-users"></i> 105 backers</span>
-                                    <a href="" className="btn btn-reward">GET THIS REWARD</a>
+								<h3>$30</h3>
+								<h2>Super Bird</h2>
+								<p>Curabitur accumsan sem sed velit ultrices fermentum. Pellentesque rutrum mi nec ipsum elementum aliquet. Sed id vestibulum eros. Nullam nunc velit, viverra sed consequat ac, pulvinar in metus.</p>
+								<span><i className="fa fa-users"></i> 105 backers</span>
+								<a href="" className="btn btn-reward">GET THIS REWARD</a>
                                 </div>
                                 <div className="reward-block last">
                                     <h3>$50</h3>
@@ -215,59 +152,60 @@ function BlogTemp() {
                                     <span><i className="fa fa-users"></i> 64 backers</span>
                                     <a href="" className="btn btn-reward">GET THIS REWARD</a>
                                 </div> */}
-                                {/* <!--/reward blocks--> */}
-                            </div>
-                            {/* <!--credits--> */}
-                            {/* <div className="section-block">
+							{/* <!--/reward blocks--> */}
+						</div>
+						{/* <!--credits--> */}
+						{/* <div className="section-block">
                                 <h1 className="section-title">CREDITS</h1>
-                               
+								
                                 <div className="credit-block sources">
-                                    <ul className="list-unstyled">
-                                        <li><a href="http://getbootstrap.com/"><i className="fa fa-external-link"></i>Bootstrap</a></li>
-                                        <li><a href="http://fortawesome.github.io/Font-Awesome/"><i className="fa fa-external-link"></i>FontAwesome</a></li>
-                                        <li><a href="https://www.google.com/fonts"><i className="fa fa-external-link"></i>Google Fonts</a></li>
-                                        <li><a href="http://jquery.com/"><i className="fa fa-external-link"></i>jQuery</a></li>
-                                        <li><a href="https://vimeo.com/67938315"><i className="fa fa-external-link"></i>Vimeo Video</a></li>
-                                        <li><a href="http://uifaces.com/"><i className="fa fa-external-link"></i>Glasses Image</a></li>
+								<ul className="list-unstyled">
+								<li><a href="http://getbootstrap.com/"><i className="fa fa-external-link"></i>Bootstrap</a></li>
+								<li><a href="http://fortawesome.github.io/Font-Awesome/"><i className="fa fa-external-link"></i>FontAwesome</a></li>
+								<li><a href="https://www.google.com/fonts"><i className="fa fa-external-link"></i>Google Fonts</a></li>
+								<li><a href="http://jquery.com/"><i className="fa fa-external-link"></i>jQuery</a></li>
+								<li><a href="https://vimeo.com/67938315"><i className="fa fa-external-link"></i>Vimeo Video</a></li>
+								<li><a href="http://uifaces.com/"><i className="fa fa-external-link"></i>Glasses Image</a></li>
                                     </ul>
-                                </div>
+									</div>
                                 <div className="credit-block license">
                                     <p>The Launch template was created by <a className="lined" href="http://themes.audaindesigns.com">Audain Designs</a> for use by anyone for <strong>FREE</strong> and is covered uner the <a className="lined" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.</p>
                                     <p>As time goes on the template may receive updates, follow us on twitter to get notified when an update is released.</p>
                                     <a href="http://twitter.com/audaindesigns" className="btn btn-follow"><i className="fa fa-twitter"></i>FOLLOW US</a>
                                     <a href="#" className="btn btn-download"><i className="fa fa-download"></i>DOWNLOAD TEMPLATE</a>
-                                </div>
-                             
-                            </div> */}
-                            {/* <!--/credits--> */}
-                        </div>
-                        {/* <!--/sidebar--> */}
-               
-                
-            </div>
-        </Container>
-    )
+									</div>
+									
+								</div> */}
+						{/* <!--/credits--> */}
+					</div>
+					{/* <!--/sidebar--> */}
+
+
+				</div>
+			</Container>
+		</>
+	)
 }
 
 export default BlogTemp
 
 const Container = styled.div`
 /*!
- * Temlate Name: Launch
- * Version: 1.0
- * Author: Justin Audain
- * License: Creative Commons Attribution 3.0 License
- * Website: http://themes.audaindesigns.com
- */
+* Temlate Name: Launch
+* Version: 1.0
+* Author: Justin Audain
+* License: Creative Commons Attribution 3.0 License
+* Website: http://themes.audaindesigns.com
+*/
 
 /*-Base-*/
 
 body {
-	background-color:#ECEBEB;
+	/* background-color:#ECEBEB; */
 	font-family: 'Open Sans', sans-serif;
 }
 p {
-	color:#A7A7A7;
+	color:#555555;
 }
 a { 
 	color:#85AD90;
@@ -330,8 +268,8 @@ a {
 .section-block {
 	background-color: #F7F7F7;
 	border-radius:4px;
-	padding: 30px;
-	margin-bottom:30px;
+	/* padding: 30px; */
+	/* margin-bottom:30px; */
 }
 .section-block.summary {
     background-color: #99DEAB;
@@ -361,7 +299,7 @@ a {
 
 /*-Main Content-*/
 .main-content {
-	padding:40px 0px;
+	padding:10px 0px;
 }
 
 /*-Profile Summary-*/
@@ -709,4 +647,3 @@ a {
 .btn, input{
 	outline:none;
 }`
- 

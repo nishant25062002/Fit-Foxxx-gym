@@ -96,17 +96,15 @@ function Head() {
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }} className="">
             <a style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }} href="whatsapp://send?phone=+91-9997281881">
-              {/* <img className="mb-whatsapp" src="./Images/whatsapp.png"> */}
-              {/* </img> */}
               <WhatsappRoundedIcon style={{ fontSize: "27px", color: '#25D366', fontWeight: '700' }} className="mb-whatsapp" />
             </a>
 
           </div>
           <div className="conn" onClick={toggleDrawer}>
             <MenuRoundedIcon fontSize='large' />
-            {/* <a href="#" class="hidden"></a>
-          <a href="#" class="hidden"></a>
-          <a href="#" class="hidden"></a> */}
+            {/* <a href="#" classname="hidden"></a>
+          <a href="#" classname="hidden"></a>
+          <a href="#" classname="hidden"></a> */}
 
           </div>
           <div className="Head2_div">

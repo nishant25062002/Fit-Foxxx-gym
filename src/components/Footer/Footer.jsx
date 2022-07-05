@@ -12,28 +12,28 @@ function Footer() {
    
  
     <Section>
-        <section class="footer_sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__about">
+        <section className="footer_sec">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                    <div className="footer__about">
                         <img src="https://firebasestorage.googleapis.com/v0/b/fitboxx-gym.appspot.com/o/Logos%2Ffitboxx.jpeg?alt=media&token=cc9ca798-5e1b-4ed6-8a91-16e16d5054c6" alt="" style={{width:'200px'}}/>
                         <ul>
-                            <li><i class="fa fa-clock-o"></i> Mon - Fri: 6:00am - 10:00pm</li>
-                            <li><i class="fa fa-clock-o"></i> Sat - 6:00am - 10:00pm</li>
-                            <li><i class="fa fa-clock-o"></i> Sunday - Closed</li>
+                            <li><i className="fa fa-clock-o"></i> Mon - Fri: 6:00am - 10:00pm</li>
+                            <li><i className="fa fa-clock-o"></i> Sat - 6:00am - 10:00pm</li>
+                            <li><i className="fa fa-clock-o"></i> Sunday - Closed</li>
                         </ul>
-                        <form action="#" class="subscribe-form">
+                        <form action="#" className="subscribe-form">
                             <input type="text" placeholder="Your Email" />
                             <button type="submit">
-                              {/* <i class="fa fa-send"></i> */}
+                              {/* <i className="fa fa-send"></i> */}
                               <TelegramIcon style={{fontSize:"30px"}}/>
                               </button>
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                    <div class="footer__widget">
+                <div className="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div className="footer__widget">
                         <h5>Our Programmes</h5>
                         <ul>
                             <li><a href="#">Weight Gain</a></li>
@@ -45,8 +45,8 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
+                <div className="col-lg-2 col-md-3 col-sm-6">
+                    <div className="footer__widget">
                         <h5>About Us</h5>
                         <ul>
                             <li><a href="#">Our Vision</a></li>
@@ -58,10 +58,10 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer__widget">
+                <div className="col-lg-3 col-md-6 col-sm-6">
+                    <div className="footer__widget">
                         <h5>Contact Us</h5>
-                        <ul class="footer-address">
+                        <ul className="footer-address">
                          <li>  <PhoneIcon/> 99972 81881</li>
                           <li>  <EmailIcon/> fitboxxgym@gmail.com</li>
                            <li>  <HomeIcon/> <p className="address__text">526,yash plaza 1st floor kanwali road vasant vihar, above suvidha mega mart, Dehradun, Uttarakhand 248006</p></li>
@@ -69,19 +69,19 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div class="footer__copyright">
-                <div class="row">
-                    {/* <div class="col-lg-6 col-md-6 col-sm-6"> */}
-                        <div class="footer__copyright__text">
-                            <p>  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | FitBoxx Gym <i class="fa fa-heart" aria-hidden="true"></i> </p>
+            <div className="footer__copyright">
+                <div className="row">
+                    {/* <div className="col-lg-6 col-md-6 col-sm-6"> */}
+                        <div className="footer__copyright__text">
+                            <p>  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | FitBoxx Gym <i className="fa fa-heart" aria-hidden="true"></i> </p>
                         </div>
                     {/* </div> */}
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="footer__copyright__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/fitboxxgym/?hl=en"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="footer__copyright__social">
+                            <a href="#"><i className="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/fitboxxgym/?hl=en"><i className="fa fa-instagram"></i></a>
+                            <a href="#"><i className="fa fa-twitter"></i></a>
+                            <a href="#"><i className="fa fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
