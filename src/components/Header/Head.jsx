@@ -87,7 +87,7 @@ function Head() {
     <>
       <div className='Head'>
         <div onClick={() => { navigate('/'); setPathName('/') }} className="Head1" style={{ fontSize: "32px", fontWeight: "700", letterSpacing: "1px" }}>
-          <img src="https://firebasestorage.googleapis.com/v0/b/fitboxx-gym.appspot.com/o/Logos%2Ffitboxx.jpeg?alt=media&token=cc9ca798-5e1b-4ed6-8a91-16e16d5054c6"></img>
+          <img  src="https://firebasestorage.googleapis.com/v0/b/fitboxx-gym.appspot.com/o/Logos%2Ffitboxx.jpeg?alt=media&token=cc9ca798-5e1b-4ed6-8a91-16e16d5054c6"></img>
           {/* Fit Boxxx */}
         </div>
         <div className="Head2">

@@ -44,7 +44,8 @@ const Content = () => {
         <iframe
           width="100%"
           height="345"
-          src="https://www.youtube.com/embed/x-upKQJ7zxM"
+          src="/Videos/fb_video.mp4"
+          allow="fullscreen"
         ></iframe>
       </div>
     </div>

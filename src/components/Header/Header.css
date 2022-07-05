@@ -47,6 +47,9 @@
 .Header_socialApp div:last-child {
     color: #00b9ff;
 }
+.Header_socialApp  div a{
+    color: inherit;
+}
 
 .Head {
     position: sticky !important;
